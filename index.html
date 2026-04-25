@@ -92,62 +92,44 @@
       text-shadow: 0 0 8px rgba(255,255,255,0.4);
     }
 
-    /* Bottom-left: now playing */
-    #now-playing {
+    /* ── MTV Band ── */
+    #mtv-band {
       position: absolute;
-      bottom: 32px;
-      left: 28px;
-      max-width: 420px;
-    }
-
-    #np-label {
-      font-size: 9px;
-      letter-spacing: 0.22em;
-      color: var(--green);
-      text-transform: uppercase;
-      margin-bottom: 5px;
-      opacity: 0.9;
-    }
-
-    #np-artist {
-      font-size: 18px;
-      font-weight: bold;
-      color: #fff;
-      line-height: 1.15;
-      text-shadow: 0 2px 12px rgba(0,0,0,0.9);
-    }
-
-    #np-title {
-      font-size: 13px;
-      color: rgba(255,255,255,0.65);
-      margin-top: 2px;
-      font-style: italic;
-    }
-
-    #np-director {
-      font-size: 10px;
-      color: rgba(255,255,255,0.4);
-      margin-top: 3px;
-      font-style: italic;
-    }
-
-    #np-year {
-      font-size: 10px;
-      color: rgba(255,255,255,0.35);
-      margin-top: 4px;
-      letter-spacing: 0.1em;
-    }
-
-    /* Progress bar */
-    #progress-bar {
-      position: absolute;
-      bottom: 0;
+      bottom: 44px;
       left: 0;
-      height: 2px;
-      background: var(--green);
-      width: 0%;
-      transition: width 1s linear;
-      opacity: 0.7;
+      padding: 16px 56px 16px 28px;
+      clip-path: polygon(0 0, calc(100% - 28px) 0, 100% 50%, calc(100% - 28px) 100%, 0 100%);
+      transform: translateX(-110%);
+      transition: transform 0.4s cubic-bezier(0.22, 0.61, 0.36, 1);
+      pointer-events: none;
+      max-width: 500px;
+    }
+
+    #mtv-band.visible {
+      transform: translateX(0);
+    }
+
+    #band-artist {
+      font-size: 22px;
+      font-weight: 900;
+      color: #000;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+      line-height: 1.1;
+    }
+
+    #band-title {
+      font-size: 13px;
+      font-weight: 600;
+      font-style: italic;
+      color: #000;
+      margin-top: 3px;
+    }
+
+    #band-director {
+      font-size: 10px;
+      color: rgba(0, 0, 0, 0.55);
+      margin-top: 4px;
     }
 
     /* ── Intro overlay ── */
@@ -295,18 +277,14 @@
       <div id="channel-name">rewind.channel</div>
     </div>
 
-    <div id="now-playing">
-      <div id="np-label">Now Playing</div>
-      <div id="np-artist">—</div>
-      <div id="np-title"></div>
-      <div id="np-director"></div>
-      <div id="np-year"></div>
+    <div id="mtv-band">
+      <div id="band-artist"></div>
+      <div id="band-title"></div>
+      <div id="band-director"></div>
     </div>
-
-    <div id="progress-bar"></div>
   </div>
 
-  <div id="mute-hint" onclick="toggleMute()">&#128266; Unmute</div>
+  <div id="mute-hint" onclick="toggleMute()">&#128264; Mute</div>
 
   <script>
     // ── Debug ────────────────────────────────────────────────────────────────
@@ -319,11 +297,13 @@
     }
 
     // ── State ────────────────────────────────────────────────────────────────
+    const RWD_COLORS = ['#FFE600', '#FF0099', '#00E5FF', '#FF4500', '#CCFF00'];
     let playlist = [];
     let player = null;
     let currentIndex = -1;
-    let isMuted = true;
-    let progressInterval = null;
+    let isMuted = false;
+    let bandTimers = [];
+    let watchdogTimer = null;
 
     // ── Sync ─────────────────────────────────────────────────────────────────
     function totalDuration() {
@@ -346,22 +326,30 @@
     // ── UI helpers ────────────────────────────────────────────────────────────
     function updateNowPlaying(index) {
       const v = playlist[index];
-      document.getElementById('np-artist').textContent = v.artist;
-      document.getElementById('np-title').textContent = v.title;
-      document.getElementById('np-director').textContent = v.director ? 'dir. ' + v.director : '';
-      document.getElementById('np-year').textContent = v.year;
+      document.getElementById('band-artist').textContent = v.artist;
+      document.getElementById('band-title').textContent = v.title;
+      document.getElementById('band-director').textContent = v.director ? 'dir. ' + v.director : '';
     }
 
-    function startProgress(offset, duration) {
-      clearInterval(progressInterval);
-      const bar = document.getElementById('progress-bar');
-      const start = Date.now() - offset * 1000;
+    function showBand() {
+      document.getElementById('mtv-band').classList.add('visible');
+    }
 
-      progressInterval = setInterval(() => {
-        const elapsed = (Date.now() - start) / 1000;
-        const pct = Math.min((elapsed / duration) * 100, 100);
-        bar.style.width = pct + '%';
-      }, 500);
+    function hideBand() {
+      document.getElementById('mtv-band').classList.remove('visible');
+    }
+
+    function scheduleBand(offset, duration) {
+      bandTimers.forEach(clearTimeout);
+      bandTimers = [];
+
+      showBand();
+      bandTimers.push(setTimeout(hideBand, 8000));
+
+      const timeUntilReappear = (duration - offset - 10) * 1000;
+      if (timeUntilReappear > 9000) {
+        bandTimers.push(setTimeout(showBand, timeUntilReappear));
+      }
     }
 
     // ── Player control ────────────────────────────────────────────────────────
@@ -370,13 +358,22 @@
       currentIndex = index;
       const v = playlist[index];
 
+      clearTimeout(watchdogTimer);
+      watchdogTimer = setTimeout(() => {
+        if (player.getPlayerState() === -1) {
+          dbg(`skipped: ${v.id} - not playable`);
+          loadVideo((currentIndex + 1) % playlist.length, 0);
+        }
+      }, 5000);
+
       dbg('load', { id: v.id, artist: v.artist, title: v.title, offset: `${offset}s` });
       player.loadVideoById({ videoId: v.id, startSeconds: offset });
       player.setVolume(80);
       if (isMuted) player.mute(); else player.unMute();
 
+      document.getElementById('mtv-band').style.background = RWD_COLORS[index % RWD_COLORS.length];
       updateNowPlaying(index);
-      startProgress(offset, v.duration);
+      scheduleBand(offset, v.duration);
 
       // Safety timeout: advance a few seconds before expected end
       const remaining = (v.duration - offset) * 1000;
@@ -427,6 +424,9 @@
           },
           onStateChange: (e) => {
             dbg('state', { state: YT_STATES[e.data] ?? e.data });
+            if (e.data === YT.PlayerState.PLAYING) {
+              clearTimeout(watchdogTimer);
+            }
             if (e.data === YT.PlayerState.ENDED) {
               const next = (currentIndex + 1) % playlist.length;
               loadVideo(next, 0);

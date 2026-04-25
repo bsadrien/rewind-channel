@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>rewind.channel</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --green: #00ff41;
+      --dim: rgba(0, 0, 0, 0.6);
+    }
+
+    html, body {
+      width: 100%; height: 100%;
+      background: #000;
+      overflow: hidden;
+      font-family: 'Courier New', Courier, monospace;
+      color: #fff;
+    }
+
+    /* ── Player ── */
+    #player-wrap {
+      position: fixed;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #000;
+    }
+
+    #player-wrap iframe {
+      width: 100vw;
+      height: 56.25vw; /* 16:9 */
+      min-height: 100vh;
+      min-width: 177.78vh;
+      pointer-events: none; /* no YT controls */
+    }
+
+    /* ── Scanlines ── */
+    #scanlines {
+      position: fixed;
+      inset: 0;
+      background: repeating-linear-gradient(
+        0deg,
+        transparent 0px,
+        transparent 3px,
+        rgba(0, 0, 0, 0.08) 3px,
+        rgba(0, 0, 0, 0.08) 4px
+      );
+      pointer-events: none;
+      z-index: 10;
+    }
+
+    /* ── UI chrome ── */
+    #ui {
+      position: fixed;
+      inset: 0;
+      z-index: 20;
+      pointer-events: none;
+    }
+
+    /* Top-right: channel bug */
+    #channel-bug {
+      position: absolute;
+      top: 24px;
+      right: 28px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      opacity: 0.85;
+    }
+
+    #bug-dot {
+      width: 10px; height: 10px;
+      background: #e53935;
+      border-radius: 50%;
+      animation: pulse 1.4s ease-in-out infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.3; }
+    }
+
+    #channel-name {
+      font-size: 13px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: #fff;
+      text-shadow: 0 0 8px rgba(255,255,255,0.4);
+    }
+
+    /* Bottom-left: now playing */
+    #now-playing {
+      position: absolute;
+      bottom: 32px;
+      left: 28px;
+      max-width: 420px;
+    }
+
+    #np-label {
+      font-size: 9px;
+      letter-spacing: 0.22em;
+      color: var(--green);
+      text-transform: uppercase;
+      margin-bottom: 5px;
+      opacity: 0.9;
+    }
+
+    #np-artist {
+      font-size: 18px;
+      font-weight: bold;
+      color: #fff;
+      line-height: 1.15;
+      text-shadow: 0 2px 12px rgba(0,0,0,0.9);
+    }
+
+    #np-title {
+      font-size: 13px;
+      color: rgba(255,255,255,0.65);
+      margin-top: 2px;
+      font-style: italic;
+    }
+
+    #np-director {
+      font-size: 10px;
+      color: rgba(255,255,255,0.4);
+      margin-top: 3px;
+      font-style: italic;
+    }
+
+    #np-year {
+      font-size: 10px;
+      color: rgba(255,255,255,0.35);
+      margin-top: 4px;
+      letter-spacing: 0.1em;
+    }
+
+    /* Progress bar */
+    #progress-bar {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 2px;
+      background: var(--green);
+      width: 0%;
+      transition: width 1s linear;
+      opacity: 0.7;
+    }
+
+    /* ── Intro overlay ── */
+    #overlay {
+      position: fixed;
+      inset: 0;
+      z-index: 100;
+      background: #000;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: opacity 0.6s ease;
+    }
+
+    #overlay.fade-out {
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    #overlay-logo {
+      font-size: clamp(28px, 5vw, 52px);
+      letter-spacing: 0.08em;
+      color: #fff;
+      margin-bottom: 8px;
+    }
+
+    #overlay-logo span {
+      color: var(--green);
+    }
+
+    #overlay-sub {
+      font-size: 11px;
+      letter-spacing: 0.3em;
+      color: rgba(255,255,255,0.35);
+      text-transform: uppercase;
+      margin-bottom: 56px;
+    }
+
+    #overlay-cta {
+      font-size: 12px;
+      letter-spacing: 0.25em;
+      color: rgba(255,255,255,0.5);
+      text-transform: uppercase;
+      border: 1px solid rgba(255,255,255,0.15);
+      padding: 12px 28px;
+      transition: all 0.2s;
+    }
+
+    #overlay:hover #overlay-cta {
+      border-color: rgba(255,255,255,0.5);
+      color: #fff;
+    }
+
+    #overlay-noise {
+      position: absolute;
+      inset: 0;
+      opacity: 0.03;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+      background-size: 128px;
+      pointer-events: none;
+    }
+
+    /* ── Unmute hint ── */
+    #mute-hint {
+      position: fixed;
+      bottom: 32px;
+      right: 28px;
+      z-index: 30;
+      font-size: 11px;
+      letter-spacing: 0.15em;
+      color: rgba(255,255,255,0.4);
+      cursor: pointer;
+      pointer-events: all;
+      text-transform: uppercase;
+      transition: color 0.2s;
+      user-select: none;
+      display: none;
+    }
+
+    #mute-hint:hover { color: rgba(255,255,255,0.9); }
+  </style>
+</head>
+<body>
+
+  <!-- Intro overlay -->
+  <div id="overlay">
+    <div id="overlay-noise"></div>
+    <div id="overlay-logo">rewind<span>.</span>channel</div>
+    <div id="overlay-sub">Music Television — 24/7</div>
+    <div id="overlay-cta">&#9654;&nbsp; Tune In</div>
+  </div>
+
+  <!-- TV frame -->
+  <div id="player-wrap">
+    <div id="yt-player"></div>
+  </div>
+
+  <div id="scanlines"></div>
+
+  <div id="ui">
+    <div id="channel-bug">
+      <div id="bug-dot"></div>
+      <div id="channel-name">rewind.channel</div>
+    </div>
+
+    <div id="now-playing">
+      <div id="np-label">Now Playing</div>
+      <div id="np-artist">—</div>
+      <div id="np-title"></div>
+      <div id="np-director"></div>
+      <div id="np-year"></div>
+    </div>
+
+    <div id="progress-bar"></div>
+  </div>
+
+  <div id="mute-hint" onclick="toggleMute()">&#128266; Unmute</div>
+
+  <script>
+    // ── State ────────────────────────────────────────────────────────────────
+    let playlist = [];
+    let player = null;
+    let currentIndex = -1;
+    let isMuted = true;
+    let progressInterval = null;
+
+    // ── Sync ─────────────────────────────────────────────────────────────────
+    function totalDuration() {
+      return playlist.reduce((s, v) => s + v.duration, 0);
+    }
+
+    function getState() {
+      const now = Math.floor(Date.now() / 1000);
+      const total = totalDuration();
+      let pos = now % total;
+
+      for (let i = 0; i < playlist.length; i++) {
+        if (pos < playlist[i].duration) {
+          return { index: i, offset: pos };
+        }
+        pos -= playlist[i].duration;
+      }
+    }
+
+    // ── UI helpers ────────────────────────────────────────────────────────────
+    function updateNowPlaying(index) {
+      const v = playlist[index];
+      document.getElementById('np-artist').textContent = v.artist;
+      document.getElementById('np-title').textContent = v.title;
+      document.getElementById('np-director').textContent = v.director ? 'dir. ' + v.director : '';
+      document.getElementById('np-year').textContent = v.year;
+    }
+
+    function startProgress(offset, duration) {
+      clearInterval(progressInterval);
+      const bar = document.getElementById('progress-bar');
+      const start = Date.now() - offset * 1000;
+
+      progressInterval = setInterval(() => {
+        const elapsed = (Date.now() - start) / 1000;
+        const pct = Math.min((elapsed / duration) * 100, 100);
+        bar.style.width = pct + '%';
+      }, 500);
+    }
+
+    // ── Player control ────────────────────────────────────────────────────────
+    function loadVideo(index, offset) {
+      if (!player || typeof player.loadVideoById !== 'function') return;
+      currentIndex = index;
+      const v = playlist[index];
+
+      player.loadVideoById({ videoId: v.id, startSeconds: offset });
+      player.setVolume(80);
+      if (isMuted) player.mute(); else player.unMute();
+
+      updateNowPlaying(index);
+      startProgress(offset, v.duration);
+
+      // Safety timeout: advance a few seconds before expected end
+      const remaining = (v.duration - offset) * 1000;
+      setTimeout(() => {
+        const state = player.getPlayerState && player.getPlayerState();
+        // -1=unstarted, 0=ended, 1=playing, 2=paused, 3=buffering, 5=cued
+        if (state !== 0) {
+          const next = (currentIndex + 1) % playlist.length;
+          loadVideo(next, 0);
+        }
+      }, remaining + 2000);
+    }
+
+    function toggleMute() {
+      if (!player) return;
+      isMuted = !isMuted;
+      const hint = document.getElementById('mute-hint');
+      if (isMuted) {
+        player.mute();
+        hint.innerHTML = '&#128266; Unmute';
+      } else {
+        player.unMute();
+        hint.innerHTML = '&#128264; Mute';
+      }
+    }
+
+    // ── YouTube IFrame API ────────────────────────────────────────────────────
+    function onYouTubeIframeAPIReady() {
+      player = new YT.Player('yt-player', {
+        width: '100%',
+        height: '100%',
+        playerVars: {
+          autoplay: 1,
+          controls: 0,
+          disablekb: 1,
+          fs: 0,
+          iv_load_policy: 3,
+          modestbranding: 1,
+          playsinline: 1,
+          rel: 0,
+          showinfo: 0
+        },
+        events: {
+          onReady: () => {
+            const { index, offset } = getState();
+            loadVideo(index, offset);
+          },
+          onStateChange: (e) => {
+            if (e.data === YT.PlayerState.ENDED) {
+              const next = (currentIndex + 1) % playlist.length;
+              loadVideo(next, 0);
+            }
+          }
+        }
+      });
+    }
+
+    // ── Overlay ───────────────────────────────────────────────────────────────
+    function tuneIn() {
+      const overlay = document.getElementById('overlay');
+      overlay.classList.add('fade-out');
+      setTimeout(() => overlay.remove(), 700);
+
+      document.getElementById('mute-hint').style.display = 'block';
+
+      // Inject YT script after user gesture so autoplay is allowed
+      const tag = document.createElement('script');
+      tag.src = 'https://www.youtube.com/iframe_api';
+      document.head.appendChild(tag);
+    }
+
+    document.getElementById('overlay').addEventListener('click', tuneIn);
+
+    // ── Load playlist ─────────────────────────────────────────────────────────
+    fetch('playlist.json')
+      .then(r => r.json())
+      .then(data => { playlist = data; })
+      .catch(() => {
+        // Fallback: minimal inline playlist if fetch fails (e.g. file://)
+        playlist = [
+          { id: "YVkUvmDQ3HY", artist: "Eminem", title: "Without Me", year: 2002, duration: 290 },
+          { id: "eVTXPUF4Oz4", artist: "Linkin Park", title: "In The End", year: 2001, duration: 216 }
+        ];
+      });
+  </script>
+
+</body>
+</html>

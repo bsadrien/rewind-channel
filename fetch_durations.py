@@ -6,6 +6,14 @@ from pathlib import Path
 
 ROOT = Path(__file__).parent
 
+PLAYLISTS = [
+    "playlist.json",
+    "playlist-90s.json",
+    "playlist-80s.json",
+]
+
+BATCH_SIZE = 50  # limite YouTube Data API
+
 
 def load_api_key():
     env = ROOT / ".env"
@@ -25,7 +33,7 @@ def parse_iso8601(duration):
     return h * 3600 + mi * 60 + s
 
 
-def fetch_durations(api_key, video_ids):
+def fetch_batch(api_key, video_ids):
     params = urllib.parse.urlencode({
         "id": ",".join(video_ids),
         "part": "contentDetails",
@@ -41,32 +49,60 @@ def fetch_durations(api_key, video_ids):
     }
 
 
+def fetch_durations(api_key, video_ids):
+    """Récupère les durées en batches de 50."""
+    durations = {}
+    batches = [video_ids[i:i + BATCH_SIZE] for i in range(0, len(video_ids), BATCH_SIZE)]
+    for i, batch in enumerate(batches, 1):
+        print(f"  Appel API {i}/{len(batches)} ({len(batch)} IDs)…")
+        durations.update(fetch_batch(api_key, batch))
+    return durations
+
+
 def main():
     api_key = load_api_key()
 
-    playlist_path = ROOT / "playlist.json"
-    playlist = json.loads(playlist_path.read_text())
+    # Charger toutes les playlists
+    playlists = {}
+    for filename in PLAYLISTS:
+        path = ROOT / filename
+        playlists[filename] = json.loads(path.read_text())
 
-    ids = [v["id"] for v in playlist]
-    print(f"Récupération des durées pour {len(ids)} vidéos…")
+    # Collecter les IDs uniques (un même clip peut apparaître dans plusieurs playlists)
+    all_ids = list({v["id"] for videos in playlists.values() for v in videos})
+    total_videos = sum(len(v) for v in playlists.values())
+    print(f"{len(PLAYLISTS)} playlists — {total_videos} vidéos — {len(all_ids)} IDs uniques\n")
 
-    durations = fetch_durations(api_key, ids)
+    durations = fetch_durations(api_key, all_ids)
+    print()
 
-    updated = 0
-    for video in playlist:
-        vid_id = video["id"]
-        if vid_id in durations:
-            old = video["duration"]
-            new = durations[vid_id]
-            video["duration"] = new
-            diff = f"{old}s → {new}s" if old != new else f"{new}s (inchangé)"
-            print(f"  {video['artist']} — {video['title']}: {diff}")
-            updated += 1
-        else:
-            print(f"  ⚠ ID introuvable sur YouTube : {vid_id} ({video['title']})")
+    # Mettre à jour chaque playlist
+    grand_total = grand_updated = grand_missing = 0
+    for filename, videos in playlists.items():
+        updated = missing = 0
+        print(f"── {filename} ──")
+        for video in videos:
+            vid_id = video["id"]
+            if vid_id in durations:
+                old = video["duration"]
+                new = durations[vid_id]
+                video["duration"] = new
+                diff = f"{old}s → {new}s" if old != new else f"{new}s (inchangé)"
+                print(f"  {video['artist']} — {video['title']}: {diff}")
+                updated += 1
+            else:
+                print(f"  ⚠ ID introuvable : {vid_id} ({video['title']})")
+                missing += 1
 
-    playlist_path.write_text(json.dumps(playlist, ensure_ascii=False, indent=2))
-    print(f"\nplaylist.json mis à jour ({updated}/{len(ids)} vidéos).")
+        (ROOT / filename).write_text(json.dumps(videos, ensure_ascii=False, indent=2))
+        print(f"  → {updated}/{len(videos)} mis à jour" + (f", {missing} manquant(s)" if missing else "") + "\n")
+
+        grand_total += len(videos)
+        grand_updated += updated
+        grand_missing += missing
+
+    print(f"Total : {grand_updated}/{grand_total} vidéos mises à jour" +
+          (f", {grand_missing} ID(s) introuvable(s)" if grand_missing else "") + ".")
 
 
 if __name__ == "__main__":

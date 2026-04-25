@@ -118,5 +118,125 @@
     "year": 2002,
     "duration": 291,
     "director": "Francis Lawrence"
+  },
+  {
+    "id": "Urdlvw0SSEc",
+    "artist": "Alicia Keys",
+    "title": "Fallin'",
+    "year": 2001,
+    "duration": 207,
+    "director": "Chris Robinson"
+  },
+  {
+    "id": "gGdGFtwCNBE",
+    "artist": "The Killers",
+    "title": "Mr. Brightside",
+    "year": 2003,
+    "duration": 228,
+    "director": "Sophie Muller"
+  },
+  {
+    "id": "Soa3gO7tL-c",
+    "artist": "Green Day",
+    "title": "Boulevard of Broken Dreams",
+    "year": 2004,
+    "duration": 288,
+    "director": "Samuel Bayer"
+  },
+  {
+    "id": "WpYeekQkAdc",
+    "artist": "Black Eyed Peas",
+    "title": "Where Is the Love?",
+    "year": 2003,
+    "duration": 251,
+    "director": "Michael Gracey"
+  },
+  {
+    "id": "3YxaaGgTQYM",
+    "artist": "Evanescence",
+    "title": "Bring Me to Life",
+    "year": 2003,
+    "duration": 254,
+    "director": "Philipp Stölzl"
+  },
+  {
+    "id": "yKNxeF4KMsY",
+    "artist": "Coldplay",
+    "title": "Yellow",
+    "year": 2000,
+    "duration": 273,
+    "director": "James Frost"
+  },
+  {
+    "id": "FGBhQbmPwH8",
+    "artist": "Daft Punk",
+    "title": "One More Time",
+    "year": 2001,
+    "duration": 322,
+    "director": "Kazuhisa Takenouchi"
+  },
+  {
+    "id": "_SY5xJ4G7F8",
+    "artist": "No Doubt",
+    "title": "Hey Baby",
+    "year": 2001,
+    "duration": 208,
+    "director": "Sophie Muller"
+  },
+  {
+    "id": "GRKmpn3SBdw",
+    "artist": "Jay-Z",
+    "title": "Izzo (H.O.V.A.)",
+    "year": 2001,
+    "duration": 242,
+    "director": "Hype Williams"
+  },
+  {
+    "id": "xI5NQ-0Ubfs",
+    "artist": "OutKast ft. Sleepy Brown",
+    "title": "The Way You Move",
+    "year": 2003,
+    "duration": 291,
+    "director": "Bryan Barber"
+  },
+  {
+    "id": "8WYHDfJDPDc",
+    "artist": "Nelly ft. Kelly Rowland",
+    "title": "Dilemma",
+    "year": 2002,
+    "duration": 281,
+    "director": "Sanji Senaka"
+  },
+  {
+    "id": "xgYUj_pAD-w",
+    "artist": "Aaliyah",
+    "title": "More Than a Woman",
+    "year": 2001,
+    "duration": 225,
+    "director": "Hype Williams"
+  },
+  {
+    "id": "CMX2lPum_pg",
+    "artist": "Sum 41",
+    "title": "Fat Lip",
+    "year": 2001,
+    "duration": 200,
+    "director": "Marc Klasfeld"
+  },
+  {
+    "id": "XPpTgCho5ZA",
+    "artist": "Maroon 5",
+    "title": "This Love",
+    "year": 2004,
+    "duration": 206,
+    "director": "The Malloys"
+  },
+  {
+    "id": "cLhWmTe8kso",
+    "artist": "Jay-Z ft. Beyoncé",
+    "title": "'03 Bonnie & Clyde",
+    "year": 2002,
+    "duration": 286,
+    "director": "Hype Williams"
   }
 ]

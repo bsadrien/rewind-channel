@@ -1,0 +1,242 @@
+[
+  {
+    "id": "hTWKbfoikeg",
+    "artist": "Nirvana",
+    "title": "Smells Like Teen Spirit",
+    "year": 1991,
+    "duration": 279,
+    "director": "Samuel Bayer"
+  },
+  {
+    "id": "GLvohMXgcBo",
+    "artist": "Red Hot Chili Peppers",
+    "title": "Under the Bridge",
+    "year": 1992,
+    "duration": 268,
+    "director": "Gus Van Sant"
+  },
+  {
+    "id": "NUTGr5t3MoY",
+    "artist": "Green Day",
+    "title": "Basket Case",
+    "year": 1994,
+    "duration": 195,
+    "director": "Mark Kohr"
+  },
+  {
+    "id": "MS91knuzoOA",
+    "artist": "Pearl Jam",
+    "title": "Jeremy",
+    "year": 1992,
+    "duration": 334,
+    "director": "Mark Pellington"
+  },
+  {
+    "id": "3mbBbFH9fAg",
+    "artist": "Soundgarden",
+    "title": "Black Hole Sun",
+    "year": 1994,
+    "duration": 321,
+    "director": "Howard Greenhalgh"
+  },
+  {
+    "id": "8-r-V0uK4u0",
+    "artist": "Smashing Pumpkins",
+    "title": "Bullet with Butterfly Wings",
+    "year": 1995,
+    "duration": 258,
+    "director": "Samuel Bayer"
+  },
+  {
+    "id": "SSbBvKaM6sk",
+    "artist": "Blur",
+    "title": "Song 2",
+    "year": 1997,
+    "duration": 123,
+    "director": "Sophie Muller"
+  },
+  {
+    "id": "5rOiW_xY-kc",
+    "artist": "R.E.M.",
+    "title": "Everybody Hurts",
+    "year": 1993,
+    "duration": 345,
+    "director": "Jake Scott"
+  },
+  {
+    "id": "Jne9t8sHpUc",
+    "artist": "Alanis Morissette",
+    "title": "Ironic",
+    "year": 1995,
+    "duration": 247,
+    "director": "Stéphane Sednaoui"
+  },
+  {
+    "id": "YgSPaXgAdzE",
+    "artist": "Beck",
+    "title": "Loser",
+    "year": 1993,
+    "duration": 233,
+    "director": "Steve Hanft"
+  },
+  {
+    "id": "4fndeDfaWCg",
+    "artist": "Backstreet Boys",
+    "title": "I Want It That Way",
+    "year": 1999,
+    "duration": 220,
+    "director": "Joseph Kahn"
+  },
+  {
+    "id": "gQlMMD8auMs",
+    "artist": "Spice Girls",
+    "title": "Wannabe",
+    "year": 1996,
+    "duration": 194,
+    "director": "Johan Camitz"
+  },
+  {
+    "id": "FrLequ6dUdM",
+    "artist": "TLC",
+    "title": "No Scrubs",
+    "year": 1999,
+    "duration": 250,
+    "director": "Hype Williams"
+  },
+  {
+    "id": "GuJQSAiODqI",
+    "artist": "Madonna",
+    "title": "Vogue",
+    "year": 1990,
+    "duration": 294,
+    "director": "David Fincher"
+  },
+  {
+    "id": "F2AitTPI5U0",
+    "artist": "Michael Jackson",
+    "title": "Black or White",
+    "year": 1991,
+    "duration": 383,
+    "director": "John Landis"
+  },
+  {
+    "id": "qq09UkPRdFY",
+    "artist": "Mariah Carey",
+    "title": "Fantasy",
+    "year": 1995,
+    "duration": 249,
+    "director": "Diane Martel"
+  },
+  {
+    "id": "3JWTaaS7LdU",
+    "artist": "Whitney Houston",
+    "title": "I Will Always Love You",
+    "year": 1993,
+    "duration": 274,
+    "director": "Alan Smithee"
+  },
+  {
+    "id": "glEiPXAYE-U",
+    "artist": "The Notorious B.I.G.",
+    "title": "Hypnotize",
+    "year": 1997,
+    "duration": 339,
+    "director": "Hype Williams"
+  },
+  {
+    "id": "hHcyJPTTn9w",
+    "artist": "Missy Elliott",
+    "title": "The Rain (Supa Dupa Fly)",
+    "year": 1997,
+    "duration": 254,
+    "director": "Hype Williams"
+  },
+  {
+    "id": "uTMuqL0qx08",
+    "artist": "Aaliyah",
+    "title": "Are You That Somebody",
+    "year": 1998,
+    "duration": 264,
+    "director": "Hype Williams"
+  },
+  {
+    "id": "8GliyDgAGQI",
+    "artist": "Dr. Dre ft. Snoop Dogg",
+    "title": "Nuthin' But a G Thang",
+    "year": 1992,
+    "duration": 285,
+    "director": "Dr. Dre"
+  },
+  {
+    "id": "T6QKqFPRZSA",
+    "artist": "Lauryn Hill",
+    "title": "Doo Wop (That Thing)",
+    "year": 1998,
+    "duration": 239,
+    "director": "Hype Williams"
+  },
+  {
+    "id": "K0HSD_i2DvA",
+    "artist": "Daft Punk",
+    "title": "Around the World",
+    "year": 1997,
+    "duration": 242,
+    "director": "Michel Gondry"
+  },
+  {
+    "id": "ruAi4VBoBSM",
+    "artist": "Fatboy Slim",
+    "title": "Praise You",
+    "year": 1999,
+    "duration": 227,
+    "director": "Spike Jonze"
+  },
+  {
+    "id": "u7K72X4eo_s",
+    "artist": "Massive Attack",
+    "title": "Teardrop",
+    "year": 1998,
+    "duration": 285,
+    "director": "Walter Stern"
+  },
+  {
+    "id": "wmin5WkOuPw",
+    "artist": "The Prodigy",
+    "title": "Firestarter",
+    "year": 1996,
+    "duration": 226,
+    "director": "Walter Stern"
+  },
+  {
+    "id": "zDKO6XYXioc",
+    "artist": "Boyz II Men",
+    "title": "End of the Road",
+    "year": 1992,
+    "duration": 255,
+    "director": "Billie Woodruff"
+  },
+  {
+    "id": "bGCHhQeXoAY",
+    "artist": "En Vogue",
+    "title": "Don't Let Go (Love)",
+    "year": 1997,
+    "duration": 273,
+    "director": "Francis Lawrence"
+  },
+  {
+    "id": "n5h0qHwNrHk",
+    "artist": "Radiohead",
+    "title": "Fake Plastic Trees",
+    "year": 1995,
+    "duration": 293,
+    "director": "Jake Nava"
+  },
+  {
+    "id": "iTxOKsyZ0Lw",
+    "artist": "The Chemical Brothers",
+    "title": "Block Rockin' Beats",
+    "year": 1997,
+    "duration": 207,
+    "director": "Baillie Walsh"
+  }
+]

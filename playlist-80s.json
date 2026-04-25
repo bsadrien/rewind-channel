@@ -1,0 +1,242 @@
+[
+  {
+    "id": "djV11Xbc914",
+    "artist": "a-ha",
+    "title": "Take On Me",
+    "year": 1985,
+    "duration": 244,
+    "director": "Steve Barron"
+  },
+  {
+    "id": "sOnqjkJTMaA",
+    "artist": "Michael Jackson",
+    "title": "Thriller",
+    "year": 1983,
+    "duration": 822,
+    "director": "John Landis"
+  },
+  {
+    "id": "oRdxUFDoQe0",
+    "artist": "Michael Jackson",
+    "title": "Beat It",
+    "year": 1983,
+    "duration": 299,
+    "director": "Bob Giraldi"
+  },
+  {
+    "id": "PIb6AZdTr-A",
+    "artist": "Cyndi Lauper",
+    "title": "Girls Just Want to Have Fun",
+    "year": 1983,
+    "duration": 267,
+    "director": "Edd Griles"
+  },
+  {
+    "id": "FTQbiNvZqaY",
+    "artist": "Toto",
+    "title": "Africa",
+    "year": 1982,
+    "duration": 272,
+    "director": "Steve Barron"
+  },
+  {
+    "id": "dQw4w9WgXcQ",
+    "artist": "Rick Astley",
+    "title": "Never Gonna Give You Up",
+    "year": 1987,
+    "duration": 214,
+    "director": "Simon West"
+  },
+  {
+    "id": "eH3giaIzONA",
+    "artist": "Whitney Houston",
+    "title": "I Wanna Dance with Somebody",
+    "year": 1987,
+    "duration": 315,
+    "director": "Brian Grant"
+  },
+  {
+    "id": "6Cs3Pvmmv0E",
+    "artist": "George Michael",
+    "title": "Faith",
+    "year": 1987,
+    "duration": 224,
+    "director": "George Michael"
+  },
+  {
+    "id": "1w7OgIMMRc4",
+    "artist": "Guns N' Roses",
+    "title": "Sweet Child O' Mine",
+    "year": 1988,
+    "duration": 303,
+    "director": "Nigel Dick"
+  },
+  {
+    "id": "lDK9QqIzhwk",
+    "artist": "Bon Jovi",
+    "title": "Livin' on a Prayer",
+    "year": 1986,
+    "duration": 249,
+    "director": "Wayne Isham"
+  },
+  {
+    "id": "N4bFqW_eu2I",
+    "artist": "David Bowie",
+    "title": "Let's Dance",
+    "year": 1983,
+    "duration": 261,
+    "director": "David Mallet"
+  },
+  {
+    "id": "OMOGaugKpzs",
+    "artist": "The Police",
+    "title": "Every Breath You Take",
+    "year": 1983,
+    "duration": 229,
+    "director": "Godley & Creme"
+  },
+  {
+    "id": "cNd4eocq2K0",
+    "artist": "Depeche Mode",
+    "title": "Personal Jesus",
+    "year": 1989,
+    "duration": 238,
+    "director": "Anton Corbijn"
+  },
+  {
+    "id": "pIgZ7gMze7A",
+    "artist": "Wham!",
+    "title": "Wake Me Up Before You Go-Go",
+    "year": 1984,
+    "duration": 234,
+    "director": "Andy Morahan"
+  },
+  {
+    "id": "UG3VcCAlUgE",
+    "artist": "Prince",
+    "title": "When Doves Cry",
+    "year": 1984,
+    "duration": 225,
+    "director": "Prince"
+  },
+  {
+    "id": "oJL-lCzEXgI",
+    "artist": "Duran Duran",
+    "title": "Hungry Like the Wolf",
+    "year": 1982,
+    "duration": 223,
+    "director": "Russell Mulcahy"
+  },
+  {
+    "id": "ujNeHIo7oTE",
+    "artist": "U2",
+    "title": "With or Without You",
+    "year": 1987,
+    "duration": 293,
+    "director": "Meiert Avis"
+  },
+  {
+    "id": "wTP2RUD_cL0",
+    "artist": "Dire Straits",
+    "title": "Money for Nothing",
+    "year": 1985,
+    "duration": 279,
+    "director": "Steve Barron"
+  },
+  {
+    "id": "5IsSpAOD6K8",
+    "artist": "Talking Heads",
+    "title": "Once in a Lifetime",
+    "year": 1981,
+    "duration": 225,
+    "director": "Toni Basil & David Byrne"
+  },
+  {
+    "id": "9GMjH1nR0ds",
+    "artist": "New Order",
+    "title": "Blue Monday",
+    "year": 1983,
+    "duration": 248,
+    "director": "William Wegman"
+  },
+  {
+    "id": "oGpFcHTxjZs",
+    "artist": "Tina Turner",
+    "title": "What's Love Got to Do with It",
+    "year": 1984,
+    "duration": 227,
+    "director": "Mark Robinson"
+  },
+  {
+    "id": "qeMFqkcPYcg",
+    "artist": "Eurythmics",
+    "title": "Sweet Dreams (Are Made of This)",
+    "year": 1983,
+    "duration": 215,
+    "director": "Jon Roseman"
+  },
+  {
+    "id": "CdqoNKCCt7A",
+    "artist": "Simple Minds",
+    "title": "Don't You (Forget About Me)",
+    "year": 1985,
+    "duration": 263,
+    "director": "Steve Barron"
+  },
+  {
+    "id": "SwYN7mTi6HM",
+    "artist": "Van Halen",
+    "title": "Jump",
+    "year": 1984,
+    "duration": 243,
+    "director": "Pete Angelus & David Lee Roth"
+  },
+  {
+    "id": "hXCKLJGLENs",
+    "artist": "The Cure",
+    "title": "Lovesong",
+    "year": 1989,
+    "duration": 210,
+    "director": "Tim Pope"
+  },
+  {
+    "id": "mHONNcZbwDY",
+    "artist": "Lionel Richie",
+    "title": "Hello",
+    "year": 1984,
+    "duration": 327,
+    "director": "Bob Giraldi"
+  },
+  {
+    "id": "129kuDCQtHs",
+    "artist": "Bruce Springsteen",
+    "title": "Dancing in the Dark",
+    "year": 1984,
+    "duration": 239,
+    "director": "Brian De Palma"
+  },
+  {
+    "id": "zuuObGsB0No",
+    "artist": "Joy Division",
+    "title": "Love Will Tear Us Apart",
+    "year": 1980,
+    "duration": 211,
+    "director": "Michael Shamberg"
+  },
+  {
+    "id": "6p-lDYPR2P8",
+    "artist": "Madonna",
+    "title": "Material Girl",
+    "year": 1985,
+    "duration": 286,
+    "director": "Mary Lambert"
+  },
+  {
+    "id": "KwIe_sjKeAY",
+    "artist": "Madness",
+    "title": "Our House",
+    "year": 1982,
+    "duration": 227,
+    "director": "Dave Robinson"
+  }
+]

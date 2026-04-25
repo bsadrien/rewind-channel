@@ -212,6 +212,40 @@
       pointer-events: none;
     }
 
+    /* ── Channel selector ── */
+    #channel-selector {
+      position: absolute;
+      top: 24px;
+      left: 28px;
+      display: flex;
+      gap: 6px;
+      pointer-events: all;
+    }
+
+    .ch-btn {
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 11px;
+      letter-spacing: 0.2em;
+      color: rgba(255,255,255,0.3);
+      background: none;
+      border: 1px solid rgba(255,255,255,0.1);
+      padding: 5px 11px;
+      cursor: pointer;
+      transition: all 0.2s;
+      text-transform: uppercase;
+      user-select: none;
+    }
+
+    .ch-btn:hover {
+      color: rgba(255,255,255,0.7);
+      border-color: rgba(255,255,255,0.3);
+    }
+
+    .ch-btn.active {
+      color: var(--green);
+      border-color: var(--green);
+    }
+
     /* ── Unmute hint ── */
     #mute-hint {
       position: fixed;
@@ -250,6 +284,12 @@
   <div id="scanlines"></div>
 
   <div id="ui">
+    <div id="channel-selector">
+      <button class="ch-btn active" onclick="switchChannel('playlist.json', this)">00s</button>
+      <button class="ch-btn" onclick="switchChannel('playlist-90s.json', this)">90s</button>
+      <button class="ch-btn" onclick="switchChannel('playlist-80s.json', this)">80s</button>
+    </div>
+
     <div id="channel-bug">
       <div id="bug-dot"></div>
       <div id="channel-name">rewind.channel</div>
@@ -269,6 +309,15 @@
   <div id="mute-hint" onclick="toggleMute()">&#128266; Unmute</div>
 
   <script>
+    // ── Debug ────────────────────────────────────────────────────────────────
+    const YT_STATES = { '-1': 'unstarted', 0: 'ended', 1: 'playing', 2: 'paused', 3: 'buffering', 5: 'cued' };
+    const YT_ERRORS = { 2: 'paramètre invalide', 5: 'erreur lecteur HTML5', 100: 'vidéo introuvable ou privée', 101: 'embed bloqué par le propriétaire', 150: 'embed bloqué (variante 101)' };
+
+    function dbg(event, detail = {}) {
+      const t = new Date().toTimeString().slice(0, 8);
+      console.log(`%c[rewind ${t}] %c${event}`, 'color:#00ff41;font-weight:bold', 'color:#ccc', detail);
+    }
+
     // ── State ────────────────────────────────────────────────────────────────
     let playlist = [];
     let player = null;
@@ -321,6 +370,7 @@
       currentIndex = index;
       const v = playlist[index];
 
+      dbg('load', { id: v.id, artist: v.artist, title: v.title, offset: `${offset}s` });
       player.loadVideoById({ videoId: v.id, startSeconds: offset });
       player.setVolume(80);
       if (isMuted) player.mute(); else player.unMute();
@@ -371,14 +421,19 @@
         },
         events: {
           onReady: () => {
+            dbg('player ready');
             const { index, offset } = getState();
             loadVideo(index, offset);
           },
           onStateChange: (e) => {
+            dbg('state', { state: YT_STATES[e.data] ?? e.data });
             if (e.data === YT.PlayerState.ENDED) {
               const next = (currentIndex + 1) % playlist.length;
               loadVideo(next, 0);
             }
+          },
+          onError: (e) => {
+            dbg('error', { code: e.data, reason: YT_ERRORS[e.data] ?? 'erreur inconnue', id: playlist[currentIndex]?.id });
           }
         }
       });
@@ -400,12 +455,27 @@
 
     document.getElementById('overlay').addEventListener('click', tuneIn);
 
+    // ── Channel switching ─────────────────────────────────────────────────────
+    function switchChannel(file, btn) {
+      document.querySelectorAll('.ch-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+
+      fetch(file)
+        .then(r => r.json())
+        .then(data => {
+          playlist = data;
+          if (player && typeof player.loadVideoById === 'function') {
+            const { index, offset } = getState();
+            loadVideo(index, offset);
+          }
+        });
+    }
+
     // ── Load playlist ─────────────────────────────────────────────────────────
     fetch('playlist.json')
       .then(r => r.json())
       .then(data => { playlist = data; })
       .catch(() => {
-        // Fallback: minimal inline playlist if fetch fails (e.g. file://)
         playlist = [
           { id: "YVkUvmDQ3HY", artist: "Eminem", title: "Without Me", year: 2002, duration: 290 },
           { id: "eVTXPUF4Oz4", artist: "Linkin Park", title: "In The End", year: 2001, duration: 216 }

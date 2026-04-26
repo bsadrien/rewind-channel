@@ -304,6 +304,7 @@
     let isMuted = false;
     let bandTimers = [];
     let watchdogTimer = null;
+    let settling = false;
 
     // ── Sync ─────────────────────────────────────────────────────────────────
     function totalDuration() {
@@ -356,6 +357,8 @@
     function loadVideo(index, offset) {
       if (!player || typeof player.loadVideoById !== 'function') return;
       currentIndex = index;
+      settling = true;
+      setTimeout(() => { settling = false; }, 3000);
       const v = playlist[index];
 
       clearTimeout(watchdogTimer);
@@ -423,11 +426,12 @@
             loadVideo(index, offset);
           },
           onStateChange: (e) => {
-            dbg('state', { state: YT_STATES[e.data] ?? e.data });
+            const stateName = YT_STATES[e.data] ?? String(e.data);
+            console.log(`[rewind] state: ${e.data}=${stateName} | settling=${settling}`);
             if (e.data === YT.PlayerState.PLAYING) {
               clearTimeout(watchdogTimer);
             }
-            if (e.data === YT.PlayerState.ENDED) {
+            if (e.data === YT.PlayerState.ENDED && !settling) {
               const next = (currentIndex + 1) % playlist.length;
               loadVideo(next, 0);
             }

@@ -364,7 +364,7 @@
       clearTimeout(watchdogTimer);
       watchdogTimer = setTimeout(() => {
         if (player.getPlayerState() === -1) {
-          dbg(`skipped: ${v.id} - not playable`);
+          dbg('next triggered by: watchdog', { id: v.id });
           loadVideo((currentIndex + 1) % playlist.length, 0);
         }
       }, 5000);
@@ -377,17 +377,6 @@
       document.getElementById('mtv-band').style.background = RWD_COLORS[index % RWD_COLORS.length];
       updateNowPlaying(index);
       scheduleBand(offset, v.duration);
-
-      // Safety timeout: advance a few seconds before expected end
-      const remaining = (v.duration - offset) * 1000;
-      setTimeout(() => {
-        const state = player.getPlayerState && player.getPlayerState();
-        // -1=unstarted, 0=ended, 1=playing, 2=paused, 3=buffering, 5=cued
-        if (state !== 0) {
-          const next = (currentIndex + 1) % playlist.length;
-          loadVideo(next, 0);
-        }
-      }, remaining + 2000);
     }
 
     function toggleMute() {
@@ -428,12 +417,15 @@
           onStateChange: (e) => {
             const stateName = YT_STATES[e.data] ?? String(e.data);
             console.log(`[rewind] state: ${e.data}=${stateName} | settling=${settling}`);
+
             if (e.data === YT.PlayerState.PLAYING) {
               clearTimeout(watchdogTimer);
+              return;
             }
+
             if (e.data === YT.PlayerState.ENDED && !settling) {
-              const next = (currentIndex + 1) % playlist.length;
-              loadVideo(next, 0);
+              dbg('next triggered by: ended');
+              loadVideo((currentIndex + 1) % playlist.length, 0);
             }
           },
           onError: (e) => {

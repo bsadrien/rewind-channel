@@ -1,0 +1,482 @@
+[
+  {
+    "id": "xqnZPHo6qx4",
+    "artist": "Téléphone",
+    "title": "Un autre monde",
+    "year": 1984,
+    "duration": 274,
+    "director": "N/A"
+  },
+  {
+    "id": "AZcypfABSzw",
+    "artist": "Téléphone",
+    "title": "Argent trop cher",
+    "year": 1981,
+    "duration": 244,
+    "director": "N/A"
+  },
+  {
+    "id": "M7X6oYg6iro",
+    "artist": "Indochine",
+    "title": "L'aventurier",
+    "year": 1982,
+    "duration": 233,
+    "director": "N/A"
+  },
+  {
+    "id": "SWtiCRntA-E",
+    "artist": "Indochine",
+    "title": "3ème sexe",
+    "year": 1985,
+    "duration": 242,
+    "director": "N/A"
+  },
+  {
+    "id": "Vav-2sgJ4MI",
+    "artist": "Jean-Jacques Goldman",
+    "title": "Il suffira d'un signe",
+    "year": 1981,
+    "duration": 256,
+    "director": "N/A"
+  },
+  {
+    "id": "-boDeijWuOY",
+    "artist": "Jean-Jacques Goldman",
+    "title": "Quand la musique est bonne",
+    "year": 1982,
+    "duration": 218,
+    "director": "N/A"
+  },
+  {
+    "id": "5AS0wPLnAhY",
+    "artist": "Jean-Jacques Goldman",
+    "title": "Je marche seul",
+    "year": 1983,
+    "duration": 235,
+    "director": "N/A"
+  },
+  {
+    "id": "oGFr_NcKyfo",
+    "artist": "Mylène Farmer",
+    "title": "Libertine",
+    "year": 1986,
+    "duration": 652,
+    "director": "Laurent Boutonnat"
+  },
+  {
+    "id": "k4yCG_WCnH8",
+    "artist": "Mylène Farmer",
+    "title": "Sans contrefaçon",
+    "year": 1987,
+    "duration": 358,
+    "director": "Laurent Boutonnat"
+  },
+  {
+    "id": "u7Bb1AA_oG8",
+    "artist": "Mylène Farmer",
+    "title": "Tristana",
+    "year": 1987,
+    "duration": 693,
+    "director": "Laurent Boutonnat"
+  },
+  {
+    "id": "gPKqSkC4-Rw",
+    "artist": "Alain Bashung",
+    "title": "Gaby oh Gaby",
+    "year": 1980,
+    "duration": 231,
+    "director": "N/A"
+  },
+  {
+    "id": "rtJogxTNa1o",
+    "artist": "Alain Bashung",
+    "title": "Vertige de l'amour",
+    "year": 1981,
+    "duration": 185,
+    "director": "N/A"
+  },
+  {
+    "id": "O4ACXQxCgc8",
+    "artist": "Daniel Balavoine",
+    "title": "L'aziza",
+    "year": 1985,
+    "duration": 272,
+    "director": "N/A"
+  },
+  {
+    "id": "4DuUejBkMqE",
+    "artist": "Daniel Balavoine",
+    "title": "Je ne suis pas un héros",
+    "year": 1982,
+    "duration": 316,
+    "director": "N/A"
+  },
+  {
+    "id": "Ulay2FvUEd8",
+    "artist": "Vanessa Paradis",
+    "title": "Joe le taxi",
+    "year": 1987,
+    "duration": 236,
+    "director": "N/A"
+  },
+  {
+    "id": "_YqzuE-5RE8",
+    "artist": "Renaud",
+    "title": "Mistral gagnant",
+    "year": 1985,
+    "duration": 163,
+    "director": "N/A"
+  },
+  {
+    "id": "GYcTUfniPiU",
+    "artist": "Renaud",
+    "title": "Morgane de toi",
+    "year": 1983,
+    "duration": 367,
+    "director": "N/A"
+  },
+  {
+    "id": "XDVqaxkRiqI",
+    "artist": "Renaud",
+    "title": "Dans mon HLM",
+    "year": 1983,
+    "duration": 365,
+    "director": "N/A"
+  },
+  {
+    "id": "Ft2U58G5Szw",
+    "artist": "Étienne Daho",
+    "title": "Week-end à Rome",
+    "year": 1986,
+    "duration": 253,
+    "director": "N/A"
+  },
+  {
+    "id": "EqeJUGzvnq0",
+    "artist": "Étienne Daho",
+    "title": "Tombé pour la France",
+    "year": 1985,
+    "duration": 244,
+    "director": "N/A"
+  },
+  {
+    "id": "1zWlnzFXcKY",
+    "artist": "Les Rita Mitsouko",
+    "title": "Marcia Baila",
+    "year": 1985,
+    "duration": 320,
+    "director": "N/A"
+  },
+  {
+    "id": "Ae-tP-rFJl0",
+    "artist": "Les Rita Mitsouko",
+    "title": "Andy",
+    "year": 1986,
+    "duration": 308,
+    "director": "N/A"
+  },
+  {
+    "id": "WkPV51HtLfw",
+    "artist": "Niagara",
+    "title": "L'amour à la plage",
+    "year": 1987,
+    "duration": 205,
+    "director": "N/A"
+  },
+  {
+    "id": "sJZ1G0e5bWU",
+    "artist": "Lio",
+    "title": "Banana Split",
+    "year": 1980,
+    "duration": 147,
+    "director": "N/A"
+  },
+  {
+    "id": "O8hPPw_qWe8",
+    "artist": "Laurent Voulzy",
+    "title": "Belle île en mer, Marie-Galante",
+    "year": 1987,
+    "duration": 212,
+    "director": "N/A"
+  },
+  {
+    "id": "I5mlAZkibgw",
+    "artist": "France Gall",
+    "title": "Résiste",
+    "year": 1981,
+    "duration": 273,
+    "director": "N/A"
+  },
+  {
+    "id": "7l7eXx_8DHY",
+    "artist": "France Gall",
+    "title": "Il jouait du piano debout",
+    "year": 1982,
+    "duration": 273,
+    "director": "N/A"
+  },
+  {
+    "id": "TeaKAB-IxOE",
+    "artist": "Elsa",
+    "title": "T'en va pas",
+    "year": 1986,
+    "duration": 238,
+    "director": "N/A"
+  },
+  {
+    "id": "iyLdoQGBchQ",
+    "artist": "Kaoma",
+    "title": "Lambada",
+    "year": 1989,
+    "duration": 207,
+    "director": "N/A"
+  },
+  {
+    "id": "wMuOLH-oQKs",
+    "artist": "Jeanne Mas",
+    "title": "Toute première fois",
+    "year": 1985,
+    "duration": 267,
+    "director": "N/A"
+  },
+  {
+    "id": "OplDIhyp31Y",
+    "artist": "Jeanne Mas",
+    "title": "En rouge et noir",
+    "year": 1986,
+    "duration": 269,
+    "director": "N/A"
+  },
+  {
+    "id": "TODO_bernard_lavilliers_barbares",
+    "artist": "Bernard Lavilliers",
+    "title": "Les barbares",
+    "year": 1981,
+    "duration": 0,
+    "director": "N/A"
+  },
+  {
+    "id": "cuLZs39okbY",
+    "artist": "Marc Lavoine",
+    "title": "Elle a les yeux revolver",
+    "year": 1986,
+    "duration": 214,
+    "director": "N/A"
+  },
+  {
+    "id": "qlGoCN9EqWI",
+    "artist": "Francis Cabrel",
+    "title": "Sarbacane",
+    "year": 1989,
+    "duration": 298,
+    "director": "N/A"
+  },
+  {
+    "id": "y7Yyrt2I608",
+    "artist": "Cookie Dingler",
+    "title": "Femme Libérée",
+    "year": 1984,
+    "duration": 222,
+    "director": "N/A"
+  },
+  {
+    "id": "X16fYEugii4",
+    "artist": "Dalida",
+    "title": "Mourir sur scène",
+    "year": 1983,
+    "duration": 261,
+    "director": "N/A"
+  },
+  {
+    "id": "TODO_eddy_mitchell_couleur_menthe",
+    "artist": "Eddy Mitchell",
+    "title": "Couleur menthe à l'eau",
+    "year": 1980,
+    "duration": 0,
+    "director": "N/A"
+  },
+  {
+    "id": "yTzyJ7kDLL4",
+    "artist": "Début de soirée",
+    "title": "Nuit de Folie",
+    "year": 1986,
+    "duration": 244,
+    "director": "N/A"
+  },
+  {
+    "id": "SD27eir2GNw",
+    "artist": "Stephan Eicher",
+    "title": "Déjeuner en paix",
+    "year": 1988,
+    "duration": 235,
+    "director": "N/A"
+  },
+  {
+    "id": "uAneHNwpFUE",
+    "artist": "Taxi Girl",
+    "title": "Cherchez le garçon",
+    "year": 1980,
+    "duration": 204,
+    "director": "N/A"
+  },
+  {
+    "id": "OzYnJO6RAnA",
+    "artist": "Serge Gainsbourg",
+    "title": "Lemon Incest",
+    "year": 1984,
+    "duration": 310,
+    "director": "N/A"
+  },
+  {
+    "id": "MwCQI3EN9ck",
+    "artist": "Patrick Bruel",
+    "title": "Marre de cette nana-là",
+    "year": 1984,
+    "duration": 246,
+    "director": "N/A"
+  },
+  {
+    "id": "EFgGFCMLkjk",
+    "artist": "Julien Clerc",
+    "title": "Femmes, je vous aime",
+    "year": 1981,
+    "duration": 261,
+    "director": "N/A"
+  },
+  {
+    "id": "2fy-h6QcfkE",
+    "artist": "Herbert Léonard",
+    "title": "Pour le plaisir",
+    "year": 1981,
+    "duration": 231,
+    "director": "N/A"
+  },
+  {
+    "id": "zSLE3ApNRdw",
+    "artist": "Guesch Patti",
+    "title": "Etienne",
+    "year": 1988,
+    "duration": 219,
+    "director": "N/A"
+  },
+  {
+    "id": "Dq9WLrLEjUU",
+    "artist": "Jean Luc Lahaye",
+    "title": "Femme que j'aime",
+    "year": 1985,
+    "duration": 263,
+    "director": "N/A"
+  },
+  {
+    "id": "g17yeAGwJos",
+    "artist": "Patricia Kaas",
+    "title": "Mademoiselle chante le blues",
+    "year": 1988,
+    "duration": 316,
+    "director": "N/A"
+  },
+  {
+    "id": "NlgmH5q9uNk",
+    "artist": "Desireless",
+    "title": "Voyage Voyage",
+    "year": 1986,
+    "duration": 251,
+    "director": "N/A"
+  },
+  {
+    "id": "qf7WV-pMCW0",
+    "artist": "Alain Chamfort",
+    "title": "Rock'n Rose",
+    "year": 1980,
+    "duration": 375,
+    "director": "N/A"
+  },
+  {
+    "id": "AaapynySsiw",
+    "artist": "Michel Sardou",
+    "title": "La java de Broadway",
+    "year": 1985,
+    "duration": 248,
+    "director": "N/A"
+  },
+  {
+    "id": "XDVZoMlxzJA",
+    "artist": "Isabelle Adjani",
+    "title": "Pull marine",
+    "year": 1983,
+    "duration": 251,
+    "director": "N/A"
+  },
+  {
+    "id": "dty7JyWKoKg",
+    "artist": "Gold",
+    "title": "Plus près des étoiles",
+    "year": 1985,
+    "duration": 251,
+    "director": "N/A"
+  },
+  {
+    "id": "Q-0mLKNhFX0",
+    "artist": "Michel Berger",
+    "title": "Quelques mots d'amour",
+    "year": 1981,
+    "duration": 218,
+    "director": "N/A"
+  },
+  {
+    "id": "r3b5W9WOy2U",
+    "artist": "Pierre Bachelet",
+    "title": "Les corons",
+    "year": 1982,
+    "duration": 253,
+    "director": "N/A"
+  },
+  {
+    "id": "Vo30DhPoZ2I",
+    "artist": "Alain Souchon",
+    "title": "Ultra-moderne solitude",
+    "year": 1988,
+    "duration": 235,
+    "director": "N/A"
+  },
+  {
+    "id": "TODO_francois_feldman_joy",
+    "artist": "François Feldman",
+    "title": "Joy",
+    "year": 1988,
+    "duration": 0,
+    "director": "N/A"
+  },
+  {
+    "id": "TODO_jean_pierre_mader_macumba",
+    "artist": "Jean-Pierre Mader",
+    "title": "Macumba",
+    "year": 1985,
+    "duration": 0,
+    "director": "N/A"
+  },
+  {
+    "id": "068G1r0hP28",
+    "artist": "Charlélie Couture",
+    "title": "Comme un avion sans ailes",
+    "year": 1983,
+    "duration": 213,
+    "director": "N/A"
+  },
+  {
+    "id": "9wflvuzLm2o",
+    "artist": "Alain Bashung",
+    "title": "Ma petite entreprise",
+    "year": 1987,
+    "duration": 221,
+    "director": "N/A"
+  },
+  {
+    "id": "TODO_stephanie_ouragan",
+    "artist": "Stéphanie",
+    "title": "Ouragan",
+    "year": 1986,
+    "duration": 0,
+    "director": "N/A"
+  }
+]

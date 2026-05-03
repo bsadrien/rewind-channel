@@ -1,0 +1,482 @@
+[
+  {
+    "id": "TODO_alizee_moi_lolita",
+    "artist": "Alizée",
+    "title": "Moi Lolita",
+    "year": 2000,
+    "duration": 0,
+    "director": "N/A"
+  },
+  {
+    "id": "TODO_stromae_alors_on_danse",
+    "artist": "Stromae",
+    "title": "Alors on danse",
+    "year": 2009,
+    "duration": 0,
+    "director": "N/A"
+  },
+  {
+    "id": "TODO_modjo_lady",
+    "artist": "Modjo",
+    "title": "Lady (Hear Me Tonight)",
+    "year": 2000,
+    "duration": 0,
+    "director": "N/A"
+  },
+  {
+    "id": "TODO_daft_punk_hbfs",
+    "artist": "Daft Punk",
+    "title": "Harder Better Faster Stronger",
+    "year": 2001,
+    "duration": 0,
+    "director": "N/A"
+  },
+  {
+    "id": "TODO_justice_dance",
+    "artist": "Justice",
+    "title": "D.A.N.C.E.",
+    "year": 2007,
+    "duration": 0,
+    "director": "N/A"
+  },
+  {
+    "id": "TODO_bob_sinclar_love_generation",
+    "artist": "Bob Sinclar",
+    "title": "Love Generation",
+    "year": 2005,
+    "duration": 0,
+    "director": "N/A"
+  },
+  {
+    "id": "TODO_kyo_je_cours",
+    "artist": "Kyo",
+    "title": "Je cours",
+    "year": 2003,
+    "duration": 0,
+    "director": "N/A"
+  },
+  {
+    "id": "TODO_calogero_en_apesanteur",
+    "artist": "Calogero",
+    "title": "En apesanteur",
+    "year": 2004,
+    "duration": 0,
+    "director": "N/A"
+  },
+  {
+    "id": "TODO_mickey3d_respire",
+    "artist": "Mickey 3D",
+    "title": "Respire",
+    "year": 2003,
+    "duration": 0,
+    "director": "N/A"
+  },
+  {
+    "id": "TODO_olivia_ruiz_femme_chocolat",
+    "artist": "Olivia Ruiz",
+    "title": "La femme chocolat",
+    "year": 2005,
+    "duration": 0,
+    "director": "N/A"
+  },
+  {
+    "id": "TODO_jenifer_au_soleil",
+    "artist": "Jenifer",
+    "title": "Au soleil",
+    "year": 2002,
+    "duration": 0,
+    "director": "N/A"
+  },
+  {
+    "id": "TODO_alizee_jen_ai_marre",
+    "artist": "Alizée",
+    "title": "J'en ai marre",
+    "year": 2003,
+    "duration": 0,
+    "director": "N/A"
+  },
+  {
+    "id": "TODO_renan_luce_lettre",
+    "artist": "Renan Luce",
+    "title": "La lettre",
+    "year": 2007,
+    "duration": 0,
+    "director": "N/A"
+  },
+  {
+    "id": "TODO_gregoire_toi_moi",
+    "artist": "Grégoire",
+    "title": "Toi + Moi",
+    "year": 2008,
+    "duration": 0,
+    "director": "N/A"
+  },
+  {
+    "id": "TODO_bb_brunes_nico_teen",
+    "artist": "BB Brunes",
+    "title": "Nico Teen Love",
+    "year": 2007,
+    "duration": 0,
+    "director": "N/A"
+  },
+  {
+    "id": "TODO_superbus_butterfly",
+    "artist": "Superbus",
+    "title": "Butterfly",
+    "year": 2004,
+    "duration": 0,
+    "director": "N/A"
+  },
+  {
+    "id": "TODO_yelle_a_cause_garcons",
+    "artist": "Yelle",
+    "title": "À cause des garçons",
+    "year": 2007,
+    "duration": 0,
+    "director": "N/A"
+  },
+  {
+    "id": "TODO_diams_boulette",
+    "artist": "Diam's",
+    "title": "La boulette",
+    "year": 2004,
+    "duration": 0,
+    "director": "N/A"
+  },
+  {
+    "id": "TODO_christophe_mae_bonheur",
+    "artist": "Christophe Maé",
+    "title": "Il est où le bonheur",
+    "year": 2007,
+    "duration": 0,
+    "director": "N/A"
+  },
+  {
+    "id": "TODO_corneille_parce_quon",
+    "artist": "Corneille",
+    "title": "Parce qu'on vient de loin",
+    "year": 2002,
+    "duration": 0,
+    "director": "N/A"
+  },
+  {
+    "id": "TODO_guetta_world_is_mine",
+    "artist": "David Guetta ft. Chris Willis",
+    "title": "The World Is Mine",
+    "year": 2004,
+    "duration": 0,
+    "director": "N/A"
+  },
+  {
+    "id": "TODO_phoenix_too_young",
+    "artist": "Phoenix",
+    "title": "Too Young",
+    "year": 2001,
+    "duration": 0,
+    "director": "N/A"
+  },
+  {
+    "id": "TODO_air_cherry_blossom",
+    "artist": "Air",
+    "title": "Cherry Blossom Girl",
+    "year": 2004,
+    "duration": 0,
+    "director": "N/A"
+  },
+  {
+    "id": "TODO_tellier_ritournelle",
+    "artist": "Sébastien Tellier",
+    "title": "La Ritournelle",
+    "year": 2004,
+    "duration": 0,
+    "director": "N/A"
+  },
+  {
+    "id": "TODO_cassius_sound_of_violence",
+    "artist": "Cassius",
+    "title": "The Sound of Violence",
+    "year": 2002,
+    "duration": 0,
+    "director": "N/A"
+  },
+  {
+    "id": "TODO_benabar_diner",
+    "artist": "Bénabar",
+    "title": "Le dîner",
+    "year": 2002,
+    "duration": 0,
+    "director": "N/A"
+  },
+  {
+    "id": "TODO_raphael_caravane",
+    "artist": "Raphaël",
+    "title": "Caravane",
+    "year": 2005,
+    "duration": 0,
+    "director": "N/A"
+  },
+  {
+    "id": "TODO_camille_festin",
+    "artist": "Camille",
+    "title": "Le festin",
+    "year": 2007,
+    "duration": 0,
+    "director": "N/A"
+  },
+  {
+    "id": "TODO_nolwenn_casse",
+    "artist": "Nolwenn Leroy",
+    "title": "Cassé",
+    "year": 2003,
+    "duration": 0,
+    "director": "N/A"
+  },
+  {
+    "id": "TODO_christophe_willem_septembre",
+    "artist": "Christophe Willem",
+    "title": "Septembre",
+    "year": 2007,
+    "duration": 0,
+    "director": "N/A"
+  },
+  {
+    "id": "TODO_soprano_colombe",
+    "artist": "Soprano",
+    "title": "La colombe",
+    "year": 2007,
+    "duration": 0,
+    "director": "N/A"
+  },
+  {
+    "id": "TODO_sinik_temps_fait_defaut",
+    "artist": "Sinik",
+    "title": "Le temps fait défaut",
+    "year": 2006,
+    "duration": 0,
+    "director": "N/A"
+  },
+  {
+    "id": "TODO_booba_ouest_side",
+    "artist": "Booba",
+    "title": "Ouest Side",
+    "year": 2006,
+    "duration": 0,
+    "director": "N/A"
+  },
+  {
+    "id": "TODO_disiz_robbie",
+    "artist": "Disiz la Peste",
+    "title": "L'histoire de Robbie",
+    "year": 2002,
+    "duration": 0,
+    "director": "N/A"
+  },
+  {
+    "id": "TODO_abd_al_malik_gibraltar",
+    "artist": "Abd Al Malik",
+    "title": "Gibraltar",
+    "year": 2006,
+    "duration": 0,
+    "director": "N/A"
+  },
+  {
+    "id": "TODO_rohff_vie_ghetto",
+    "artist": "Rohff",
+    "title": "La vie du ghetto",
+    "year": 2000,
+    "duration": 0,
+    "director": "N/A"
+  },
+  {
+    "id": "TODO_diams_jeune_demoiselle",
+    "artist": "Diam's",
+    "title": "Jeune demoiselle",
+    "year": 2006,
+    "duration": 0,
+    "director": "N/A"
+  },
+  {
+    "id": "TODO_zazie_tout_le_monde",
+    "artist": "Zazie",
+    "title": "Tout le monde",
+    "year": 2000,
+    "duration": 0,
+    "director": "N/A"
+  },
+  {
+    "id": "TODO_dutronc_manouche",
+    "artist": "Thomas Dutronc",
+    "title": "Comme un manouche sans guitare",
+    "year": 2007,
+    "duration": 0,
+    "director": "N/A"
+  },
+  {
+    "id": "TODO_garou_seul",
+    "artist": "Garou",
+    "title": "Seul",
+    "year": 2000,
+    "duration": 0,
+    "director": "N/A"
+  },
+  {
+    "id": "TODO_lorie_comeback",
+    "artist": "Lorie",
+    "title": "Comeback",
+    "year": 2002,
+    "duration": 0,
+    "director": "N/A"
+  },
+  {
+    "id": "TODO_m_machistador",
+    "artist": "M (Matthieu Chedid)",
+    "title": "Machistador",
+    "year": 2003,
+    "duration": 0,
+    "director": "N/A"
+  },
+  {
+    "id": "TODO_cali_amour_parfait",
+    "artist": "Cali",
+    "title": "L'amour parfait",
+    "year": 2003,
+    "duration": 0,
+    "director": "N/A"
+  },
+  {
+    "id": "TODO_tryo_hymne_campagnes",
+    "artist": "Tryo",
+    "title": "L'hymne de nos campagnes",
+    "year": 2003,
+    "duration": 0,
+    "director": "N/A"
+  },
+  {
+    "id": "TODO_calogero_yallah",
+    "artist": "Calogero",
+    "title": "Yallah",
+    "year": 2006,
+    "duration": 0,
+    "director": "N/A"
+  },
+  {
+    "id": "TODO_pagny_peut_etre_chanson",
+    "artist": "Florent Pagny",
+    "title": "Peut-être une chanson",
+    "year": 2006,
+    "duration": 0,
+    "director": "N/A"
+  },
+  {
+    "id": "TODO_bruel_tu_ne_me_verras_plus",
+    "artist": "Patrick Bruel",
+    "title": "Tu ne me verras plus",
+    "year": 2008,
+    "duration": 0,
+    "director": "N/A"
+  },
+  {
+    "id": "TODO_noah_lionnes",
+    "artist": "Yannick Noah",
+    "title": "Les lionnes",
+    "year": 2006,
+    "duration": 0,
+    "director": "N/A"
+  },
+  {
+    "id": "TODO_phoenix_1901",
+    "artist": "Phoenix",
+    "title": "1901",
+    "year": 2009,
+    "duration": 0,
+    "director": "N/A"
+  },
+  {
+    "id": "TODO_bob_sinclar_world_hold_on",
+    "artist": "Bob Sinclar",
+    "title": "World Hold On",
+    "year": 2006,
+    "duration": 0,
+    "director": "N/A"
+  },
+  {
+    "id": "TODO_grand_corps_malade_midi20",
+    "artist": "Grand Corps Malade",
+    "title": "Midi 20",
+    "year": 2006,
+    "duration": 0,
+    "director": "N/A"
+  },
+  {
+    "id": "TODO_carla_bruni_quelquun",
+    "artist": "Carla Bruni",
+    "title": "Quelqu'un m'a dit",
+    "year": 2002,
+    "duration": 0,
+    "director": "N/A"
+  },
+  {
+    "id": "TODO_kmaro_femme_like_u",
+    "artist": "K-Maro",
+    "title": "Femme Like U",
+    "year": 2004,
+    "duration": 0,
+    "director": "N/A"
+  },
+  {
+    "id": "TODO_mc_solaar_solaar_pleure",
+    "artist": "MC Solaar",
+    "title": "Solaar pleure",
+    "year": 2003,
+    "duration": 0,
+    "director": "N/A"
+  },
+  {
+    "id": "TODO_iam_nes_sous_meme_etoile",
+    "artist": "IAM",
+    "title": "Nés sous la même étoile",
+    "year": 2003,
+    "duration": 0,
+    "director": "N/A"
+  },
+  {
+    "id": "TODO_sinsemilia_bonheur_du_monde",
+    "artist": "Sinsemilia",
+    "title": "Tout le bonheur du monde",
+    "year": 2003,
+    "duration": 0,
+    "director": "N/A"
+  },
+  {
+    "id": "TODO_lara_fabian_je_suis_malade",
+    "artist": "Lara Fabian",
+    "title": "Je suis malade",
+    "year": 2000,
+    "duration": 0,
+    "director": "N/A"
+  },
+  {
+    "id": "TODO_amel_bent_mon_combat",
+    "artist": "Amel Bent",
+    "title": "Mon combat",
+    "year": 2004,
+    "duration": 0,
+    "director": "N/A"
+  },
+  {
+    "id": "TODO_bb_brunes_coups_blessures",
+    "artist": "BB Brunes",
+    "title": "Coups et blessures",
+    "year": 2008,
+    "duration": 0,
+    "director": "N/A"
+  },
+  {
+    "id": "TODO_katerine_louxor",
+    "artist": "Katerine",
+    "title": "Louxor j'adore",
+    "year": 2001,
+    "duration": 0,
+    "director": "N/A"
+  }
+]

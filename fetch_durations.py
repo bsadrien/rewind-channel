@@ -10,6 +10,7 @@ PLAYLISTS = [
     "playlist.json",
     "playlist-90s.json",
     "playlist-80s.json",
+    "playlist-france90s.json",
 ]
 
 BATCH_SIZE = 50  # limite YouTube Data API

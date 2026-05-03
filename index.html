@@ -272,8 +272,9 @@
       <button class="ch-btn" onclick="switchChannel('playlist-90s.json', this)">90s</button>
       <button class="ch-btn" onclick="switchChannel('playlist-80s.json', this)">80s</button>
       <button class="ch-btn" onclick="switchChannel('playlist-france90s.json', this)">🇫🇷 90s</button>
-      <button class="ch-btn" onclick="switchChannel('playlist-france80s.json', this)">🇫🇷 80s</button>
-      <button class="ch-btn" onclick="switchChannel('playlist-france00s.json', this)">🇫🇷 00s</button>
+      <!-- TODO: unhide once search_pending.py has filled all IDs -->
+      <button class="ch-btn" onclick="switchChannel('playlist-france80s.json', this)" hidden>🇫🇷 80s</button>
+      <button class="ch-btn" onclick="switchChannel('playlist-france00s.json', this)" hidden>🇫🇷 00s</button>
     </div>
 
     <div id="channel-bug">

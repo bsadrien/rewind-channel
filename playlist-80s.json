@@ -238,5 +238,245 @@
     "year": 1982,
     "duration": 227,
     "director": "Dave Robinson"
+  },
+  {
+    "id": "Zi_XLOBDo_Y",
+    "artist": "Michael Jackson",
+    "title": "Billie Jean",
+    "year": 1983,
+    "duration": 294,
+    "director": "Steve Barron"
+  },
+  {
+    "id": "f4Mc-NYPHaQ",
+    "artist": "Queen",
+    "title": "I Want to Break Free",
+    "year": 1984,
+    "duration": 209,
+    "director": "David Mallet"
+  },
+  {
+    "id": "ST73PXQB8mc",
+    "artist": "Tears for Fears",
+    "title": "Everybody Wants to Rule the World",
+    "year": 1985,
+    "duration": 264,
+    "director": "Nigel Dick"
+  },
+  {
+    "id": "XZVpR3Pk-r8",
+    "artist": "Soft Cell",
+    "title": "Tainted Love",
+    "year": 1981,
+    "duration": 190,
+    "director": "Tim Pope"
+  },
+  {
+    "id": "uPudE8nDog0",
+    "artist": "Human League",
+    "title": "Don't You Want Me",
+    "year": 1981,
+    "duration": 230,
+    "director": "Steve Barron"
+  },
+  {
+    "id": "6Y3rBe3YPQk",
+    "artist": "Duran Duran",
+    "title": "Rio",
+    "year": 1982,
+    "duration": 340,
+    "director": "Russell Mulcahy"
+  },
+  {
+    "id": "JmcA9LIIXWw",
+    "artist": "Culture Club",
+    "title": "Karma Chameleon",
+    "year": 1983,
+    "duration": 237,
+    "director": "Brian Grant"
+  },
+  {
+    "id": "VdQY7BZD4_A",
+    "artist": "Cyndi Lauper",
+    "title": "Time After Time",
+    "year": 1983,
+    "duration": 238,
+    "director": "Edd Griles"
+  },
+  {
+    "id": "EPhWR4d3FJQ",
+    "artist": "Bruce Springsteen",
+    "title": "Born in the U.S.A.",
+    "year": 1984,
+    "duration": 273,
+    "director": "John Sayles"
+  },
+  {
+    "id": "s__rX_WL100",
+    "artist": "Madonna",
+    "title": "Like a Virgin",
+    "year": 1984,
+    "duration": 224,
+    "director": "Mary Lambert"
+  },
+  {
+    "id": "1lWJXDG2i0A",
+    "artist": "Tom Petty",
+    "title": "Free Fallin'",
+    "year": 1989,
+    "duration": 258,
+    "director": "Julien Temple"
+  },
+  {
+    "id": "gOf1n_VL2I0",
+    "artist": "INXS",
+    "title": "Need You Tonight",
+    "year": 1987,
+    "duration": 174,
+    "director": "Richard Lowenstein"
+  },
+  {
+    "id": "J-HZ-K7GIDM",
+    "artist": "Fleetwood Mac",
+    "title": "Little Lies",
+    "year": 1987,
+    "duration": 232,
+    "director": "Andy Morahan"
+  },
+  {
+    "id": "KSNlhgdCBrY",
+    "artist": "Def Leppard",
+    "title": "Pour Some Sugar on Me",
+    "year": 1987,
+    "duration": 270,
+    "director": "Wayne Isham"
+  },
+  {
+    "id": "Bj9DkVQUsTo",
+    "artist": "Phil Collins",
+    "title": "In the Air Tonight",
+    "year": 1981,
+    "duration": 259,
+    "director": "Stuart Orme"
+  },
+  {
+    "id": "hyGRMkVzzUg",
+    "artist": "The B-52s",
+    "title": "Love Shack",
+    "year": 1989,
+    "duration": 282,
+    "director": "Richard Greenberg"
+  },
+  {
+    "id": "wp43OdtAAkM",
+    "artist": "Kate Bush",
+    "title": "Running Up That Hill",
+    "year": 1985,
+    "duration": 300,
+    "director": "Brian Wiseman"
+  },
+  {
+    "id": "p3j2NYZ8FKs",
+    "artist": "Pet Shop Boys",
+    "title": "West End Girls",
+    "year": 1985,
+    "duration": 287,
+    "director": "Eric Watson"
+  },
+  {
+    "id": "izGwDsrQ1eQ",
+    "artist": "George Michael",
+    "title": "Careless Whisper",
+    "year": 1984,
+    "duration": 318,
+    "director": "George Michael"
+  },
+  {
+    "id": "PPX2TY9EJzI",
+    "artist": "Talking Heads",
+    "title": "Burning Down the House",
+    "year": 1983,
+    "duration": 245,
+    "director": "David Byrne"
+  },
+  {
+    "id": "eFTLKWw542g",
+    "artist": "Billy Joel",
+    "title": "We Didn't Start the Fire",
+    "year": 1989,
+    "duration": 278,
+    "director": "Chris Blum"
+  },
+  {
+    "id": "1k8craCGpgs",
+    "artist": "Journey",
+    "title": "Don't Stop Believin'",
+    "year": 1981,
+    "duration": 251,
+    "director": "N/A"
+  },
+  {
+    "id": "kfnMvo874vA",
+    "artist": "Erasure",
+    "title": "A Little Respect",
+    "year": 1988,
+    "duration": 218,
+    "director": "Keith MacMillan"
+  },
+  {
+    "id": "IFeBGRnJYzM",
+    "artist": "R.E.M.",
+    "title": "The One I Love",
+    "year": 1987,
+    "duration": 197,
+    "director": "Jim Herbert"
+  },
+  {
+    "id": "IsGNRmVDHxc",
+    "artist": "Prince",
+    "title": "Little Red Corvette",
+    "year": 1982,
+    "duration": 235,
+    "director": "Steve Barron"
+  },
+  {
+    "id": "bJ9r8LMU9bQ",
+    "artist": "The Clash",
+    "title": "Rock the Casbah",
+    "year": 1982,
+    "duration": 208,
+    "director": "Don Letts"
+  },
+  {
+    "id": "2kZpjJvuWtk",
+    "artist": "The Rolling Stones",
+    "title": "Start Me Up",
+    "year": 1981,
+    "duration": 213,
+    "director": "Michael Lindsay-Hogg"
+  },
+  {
+    "id": "7WWKM4JkFGM",
+    "artist": "David Bowie",
+    "title": "Modern Love",
+    "year": 1983,
+    "duration": 228,
+    "director": "Mary Lambert"
+  },
+  {
+    "id": "StKVS0eI85I",
+    "artist": "Blondie",
+    "title": "Call Me",
+    "year": 1980,
+    "duration": 220,
+    "director": "Mark Robinson"
+  },
+  {
+    "id": "MV5TEoFrzkc",
+    "artist": "The Cars",
+    "title": "Drive",
+    "year": 1984,
+    "duration": 234,
+    "director": "Timothy Newman"
   }
 ]

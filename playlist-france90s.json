@@ -1,0 +1,498 @@
+[
+  {
+    "id": "AyVFbRiN9qA",
+    "artist": "Zebda",
+    "title": "Tomber la Chemise",
+    "year": 1999,
+    "duration": 218,
+    "director": "Gérard Pont"
+  },
+  {
+    "id": "n6e-huTcXXQ",
+    "artist": "Manau",
+    "title": "La Tribu de Dana",
+    "year": 1998,
+    "duration": 244,
+    "director": "Christophe Bier"
+  },
+  {
+    "id": "qKi1nHFfJxY",
+    "artist": "Mylène Farmer",
+    "title": "Désenchantée",
+    "year": 1991,
+    "duration": 348,
+    "director": "Laurent Boutonnat"
+  },
+  {
+    "id": "qBlF2rXJr_Y",
+    "artist": "Patrick Bruel",
+    "title": "Casser la Voix",
+    "year": 1990,
+    "duration": 243,
+    "director": "Dominique Farrugia"
+  },
+  {
+    "id": "uEzs7bJhxEQ",
+    "artist": "Roch Voisine",
+    "title": "Hélène",
+    "year": 1990,
+    "duration": 232,
+    "director": "N/A"
+  },
+  {
+    "id": "RafjmMfCrHo",
+    "artist": "Vanessa Paradis",
+    "title": "Be My Baby",
+    "year": 1992,
+    "duration": 227,
+    "director": "Luc Besson"
+  },
+  {
+    "id": "PjQVLiw-6l4",
+    "artist": "Pascal Obispo",
+    "title": "Fan",
+    "year": 1996,
+    "duration": 252,
+    "director": "Rémy Pflimlin"
+  },
+  {
+    "id": "7bInJmHhJSk",
+    "artist": "Florent Pagny",
+    "title": "Savoir Aimer",
+    "year": 1997,
+    "duration": 284,
+    "director": "N/A"
+  },
+  {
+    "id": "wOBD3tkS5h0",
+    "artist": "Alain Bashung",
+    "title": "Osez Joséphine",
+    "year": 1991,
+    "duration": 268,
+    "director": "Jean-Baptiste Mondino"
+  },
+  {
+    "id": "nOoRGmLWo_I",
+    "artist": "Hélène Ségara",
+    "title": "Au nom d'un amour",
+    "year": 1997,
+    "duration": 258,
+    "director": "N/A"
+  },
+  {
+    "id": "HKJhAikuwxk",
+    "artist": "Axelle Red",
+    "title": "Sensualité",
+    "year": 1993,
+    "duration": 244,
+    "director": "N/A"
+  },
+  {
+    "id": "bnVBCXYHJrM",
+    "artist": "Garou, Daniel Lavoie & Patrick Fiori",
+    "title": "Belle",
+    "year": 1998,
+    "duration": 299,
+    "director": "Gilles Maheu"
+  },
+  {
+    "id": "AN2lbPaYL2Y",
+    "artist": "Céline Dion",
+    "title": "Pour que tu m'aimes encore",
+    "year": 1995,
+    "duration": 272,
+    "director": "Dominique Issermann"
+  },
+  {
+    "id": "j_x7JgJmcG0",
+    "artist": "Lara Fabian",
+    "title": "Je t'aime",
+    "year": 1996,
+    "duration": 268,
+    "director": "René Manzor"
+  },
+  {
+    "id": "GdW7Qf2c0bo",
+    "artist": "Zazie",
+    "title": "Speed",
+    "year": 1995,
+    "duration": 215,
+    "director": "N/A"
+  },
+  {
+    "id": "YN9MIo9CNKM",
+    "artist": "Jean-Jacques Goldman",
+    "title": "Né en 17 à Leidenstadt",
+    "year": 1990,
+    "duration": 312,
+    "director": "N/A"
+  },
+  {
+    "id": "mLGLvDdm4bE",
+    "artist": "Ophélie Winter",
+    "title": "Dieu m'a donné la foi",
+    "year": 1995,
+    "duration": 242,
+    "director": "N/A"
+  },
+  {
+    "id": "CXEOSPAfMJ8",
+    "artist": "Francis Cabrel",
+    "title": "L'encre de tes yeux",
+    "year": 1990,
+    "duration": 238,
+    "director": "N/A"
+  },
+  {
+    "id": "m2fJhA-OVUQ",
+    "artist": "Patrick Bruel",
+    "title": "J'te l'dis quand même",
+    "year": 1996,
+    "duration": 229,
+    "director": "N/A"
+  },
+  {
+    "id": "cZBTcmELNE0",
+    "artist": "2Be3",
+    "title": "Partir un jour",
+    "year": 1997,
+    "duration": 238,
+    "director": "N/A"
+  },
+  {
+    "id": "fqnM7_X8v8U",
+    "artist": "Khaled",
+    "title": "Didi",
+    "year": 1992,
+    "duration": 266,
+    "director": "Jean-Baptiste Mondino"
+  },
+  {
+    "id": "cjnTwDMbPqM",
+    "artist": "Khaled",
+    "title": "Aïcha",
+    "year": 1996,
+    "duration": 252,
+    "director": "N/A"
+  },
+  {
+    "id": "kQa5AxJ0e_g",
+    "artist": "MC Solaar",
+    "title": "Bouge de Là",
+    "year": 1991,
+    "duration": 248,
+    "director": "N/A"
+  },
+  {
+    "id": "GjF8m_QTnso",
+    "artist": "MC Solaar",
+    "title": "La Belle et le Bad Boy",
+    "year": 1996,
+    "duration": 253,
+    "director": "N/A"
+  },
+  {
+    "id": "rnJeW-jt9Hg",
+    "artist": "IAM",
+    "title": "Je Danse le Mia",
+    "year": 1993,
+    "duration": 274,
+    "director": "N/A"
+  },
+  {
+    "id": "QvxEo3Mn1bM",
+    "artist": "IAM",
+    "title": "Demain c'est loin",
+    "year": 1997,
+    "duration": 291,
+    "director": "N/A"
+  },
+  {
+    "id": "WPXz7MLpgcM",
+    "artist": "Suprême NTM",
+    "title": "Laisse pas traîner ton fils",
+    "year": 1993,
+    "duration": 268,
+    "director": "N/A"
+  },
+  {
+    "id": "N3sKNQfCILg",
+    "artist": "Suprême NTM",
+    "title": "Qu'est-ce qu'on attend",
+    "year": 1995,
+    "duration": 259,
+    "director": "N/A"
+  },
+  {
+    "id": "XcwMdY2KRMU",
+    "artist": "Alliance Ethnik",
+    "title": "Simple & Funky",
+    "year": 1995,
+    "duration": 236,
+    "director": "N/A"
+  },
+  {
+    "id": "pJzMFWHqkAo",
+    "artist": "Doc Gynéco",
+    "title": "Nirvana",
+    "year": 1996,
+    "duration": 228,
+    "director": "N/A"
+  },
+  {
+    "id": "GnGNp9uIJJo",
+    "artist": "Daft Punk",
+    "title": "Da Funk",
+    "year": 1995,
+    "duration": 338,
+    "director": "Spike Jonze"
+  },
+  {
+    "id": "_GXC7EPQRRE",
+    "artist": "Air",
+    "title": "Sexy Boy",
+    "year": 1998,
+    "duration": 302,
+    "director": "Mike Mills"
+  },
+  {
+    "id": "mvBFqCTajxQ",
+    "artist": "Cassius",
+    "title": "Cassius 1999",
+    "year": 1999,
+    "duration": 238,
+    "director": "N/A"
+  },
+  {
+    "id": "YABR2hqTHaU",
+    "artist": "Bob Sinclar",
+    "title": "I Feel for You",
+    "year": 1998,
+    "duration": 245,
+    "director": "N/A"
+  },
+  {
+    "id": "O4i8jVJjnjc",
+    "artist": "Noir Désir",
+    "title": "Marlène",
+    "year": 1996,
+    "duration": 256,
+    "director": "N/A"
+  },
+  {
+    "id": "GYBBEBFuvwE",
+    "artist": "Louise Attaque",
+    "title": "Je t'emmène au vent",
+    "year": 1997,
+    "duration": 213,
+    "director": "N/A"
+  },
+  {
+    "id": "Sm82VEzUGMQ",
+    "artist": "Mano Negra",
+    "title": "King of Bongo",
+    "year": 1991,
+    "duration": 244,
+    "director": "N/A"
+  },
+  {
+    "id": "XvwjWmkFJGc",
+    "artist": "Les Négresses Vertes",
+    "title": "Voilà l'été",
+    "year": 1992,
+    "duration": 228,
+    "director": "N/A"
+  },
+  {
+    "id": "mSBPcAuXKbY",
+    "artist": "Indochine",
+    "title": "Les Tzars",
+    "year": 1997,
+    "duration": 285,
+    "director": "Laurent Boutonnat"
+  },
+  {
+    "id": "pS6ZdSdDrAg",
+    "artist": "Patricia Kaas",
+    "title": "Les hommes qui passent",
+    "year": 1990,
+    "duration": 238,
+    "director": "N/A"
+  },
+  {
+    "id": "JqPBb3BNWFE",
+    "artist": "Youssou N'Dour ft. Neneh Cherry",
+    "title": "7 Seconds",
+    "year": 1994,
+    "duration": 275,
+    "director": "Stéphane Sednaoui"
+  },
+  {
+    "id": "eXqygVXILBU",
+    "artist": "Nilda Fernandez",
+    "title": "Donde Vas",
+    "year": 1991,
+    "duration": 198,
+    "director": "N/A"
+  },
+  {
+    "id": "rZZiF-dLCDg",
+    "artist": "Alain Souchon",
+    "title": "Foule sentimentale",
+    "year": 1993,
+    "duration": 257,
+    "director": "N/A"
+  },
+  {
+    "id": "MHXI5RLSoiU",
+    "artist": "Tina Arena",
+    "title": "Aimer jusqu'à l'impossible",
+    "year": 1997,
+    "duration": 262,
+    "director": "N/A"
+  },
+  {
+    "id": "S5rcaqUVbUo",
+    "artist": "Mylène Farmer",
+    "title": "California",
+    "year": 1996,
+    "duration": 295,
+    "director": "Laurent Boutonnat"
+  },
+  {
+    "id": "9QT4Hx2VDAA",
+    "artist": "Jean-Jacques Goldman",
+    "title": "Pas du tout",
+    "year": 1991,
+    "duration": 232,
+    "director": "N/A"
+  },
+  {
+    "id": "VKyKdgXATXA",
+    "artist": "M (Matthieu Chedid)",
+    "title": "Je suis passé par là",
+    "year": 1999,
+    "duration": 219,
+    "director": "N/A"
+  },
+  {
+    "id": "rGi52yT0oMg",
+    "artist": "Zebda",
+    "title": "Le bruit et l'odeur",
+    "year": 1995,
+    "duration": 228,
+    "director": "N/A"
+  },
+  {
+    "id": "KcDUEiDXBUQ",
+    "artist": "Stephan Eicher",
+    "title": "Combien de temps",
+    "year": 1990,
+    "duration": 244,
+    "director": "N/A"
+  },
+  {
+    "id": "ZQgjkRi_MKM",
+    "artist": "Hélène Rollès",
+    "title": "Je ne suis pas une fille comme les autres",
+    "year": 1992,
+    "duration": 188,
+    "director": "N/A"
+  },
+  {
+    "id": "pxG-4VpR0cw",
+    "artist": "Passi ft. IAM & Nèg' Marrons",
+    "title": "Les tentations",
+    "year": 1997,
+    "duration": 271,
+    "director": "N/A"
+  },
+  {
+    "id": "L9LCFOhXtMs",
+    "artist": "Suprême NTM",
+    "title": "Le monde de demain",
+    "year": 1990,
+    "duration": 255,
+    "director": "N/A"
+  },
+  {
+    "id": "YpBdSJBbgJw",
+    "artist": "Worlds Apart",
+    "title": "Bang!",
+    "year": 1994,
+    "duration": 224,
+    "director": "N/A"
+  },
+  {
+    "id": "dOSHXJvPLjU",
+    "artist": "Lara Fabian",
+    "title": "Tout",
+    "year": 1997,
+    "duration": 256,
+    "director": "N/A"
+  },
+  {
+    "id": "GvdUJqjhGz0",
+    "artist": "Francis Cabrel",
+    "title": "Je l'aime à mourir",
+    "year": 1999,
+    "duration": 268,
+    "director": "N/A"
+  },
+  {
+    "id": "VHpJPsrCVEc",
+    "artist": "Étienne Daho",
+    "title": "La nuit, le danger",
+    "year": 1996,
+    "duration": 241,
+    "director": "N/A"
+  },
+  {
+    "id": "TZyMCHNfFmQ",
+    "artist": "Les Rita Mitsouko",
+    "title": "C'est comme ça",
+    "year": 1990,
+    "duration": 237,
+    "director": "N/A"
+  },
+  {
+    "id": "CtPHMnHXHAs",
+    "artist": "Mylène Farmer",
+    "title": "Je t'aime mélancolie",
+    "year": 1991,
+    "duration": 312,
+    "director": "Laurent Boutonnat"
+  },
+  {
+    "id": "kFAMBoMJXNk",
+    "artist": "MC Solaar",
+    "title": "Nouveau Western",
+    "year": 1994,
+    "duration": 261,
+    "director": "N/A"
+  },
+  {
+    "id": "jvhIBq7EI-k",
+    "artist": "2Be3",
+    "title": "Là où je t'emmènerai",
+    "year": 1998,
+    "duration": 231,
+    "director": "N/A"
+  },
+  {
+    "id": "UEqEFxDDFHE",
+    "artist": "Florent Pagny",
+    "title": "N'importe quoi",
+    "year": 1994,
+    "duration": 248,
+    "director": "N/A"
+  },
+  {
+    "id": "b5nYkYfvXyE",
+    "artist": "Daft Punk",
+    "title": "Around the World",
+    "year": 1997,
+    "duration": 242,
+    "director": "Michel Gondry"
+  }
+]

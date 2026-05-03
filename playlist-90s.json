@@ -238,5 +238,245 @@
     "year": 1997,
     "duration": 207,
     "director": "Baillie Walsh"
+  },
+  {
+    "id": "6hzrDeceEKc",
+    "artist": "Oasis",
+    "title": "Wonderwall",
+    "year": 1995,
+    "duration": 257,
+    "director": "Nigel Dick"
+  },
+  {
+    "id": "8WEtxJ4-sh4",
+    "artist": "TLC",
+    "title": "Waterfalls",
+    "year": 1995,
+    "duration": 260,
+    "director": "F. Gary Gray"
+  },
+  {
+    "id": "5wJPnrCNuJk",
+    "artist": "2Pac ft. Dr. Dre",
+    "title": "California Love",
+    "year": 1995,
+    "duration": 297,
+    "director": "Hype Williams"
+  },
+  {
+    "id": "TR3Vdo5etCQ",
+    "artist": "No Doubt",
+    "title": "Don't Speak",
+    "year": 1996,
+    "duration": 241,
+    "director": "Sophie Muller"
+  },
+  {
+    "id": "bWXazVeUID4",
+    "artist": "Rage Against the Machine",
+    "title": "Killing in the Name",
+    "year": 1992,
+    "duration": 318,
+    "director": "Peter Christopherson"
+  },
+  {
+    "id": "eBG7P-K-r1Y",
+    "artist": "Foo Fighters",
+    "title": "Everlong",
+    "year": 1997,
+    "duration": 250,
+    "director": "Michel Gondry"
+  },
+  {
+    "id": "nZXRV4MezEw",
+    "artist": "Cher",
+    "title": "Believe",
+    "year": 1998,
+    "duration": 238,
+    "director": "Floria Sigismondi"
+  },
+  {
+    "id": "sQgd6MccwZc",
+    "artist": "Destiny's Child",
+    "title": "Say My Name",
+    "year": 1999,
+    "duration": 234,
+    "director": "Joseph Kahn"
+  },
+  {
+    "id": "3JcmQONgXJM",
+    "artist": "Will Smith",
+    "title": "Gettin' Jiggy Wit It",
+    "year": 1998,
+    "duration": 225,
+    "director": "Diane Martel"
+  },
+  {
+    "id": "t5KU_jGHOKQ",
+    "artist": "Jay-Z",
+    "title": "Hard Knock Life (Ghetto Anthem)",
+    "year": 1998,
+    "duration": 253,
+    "director": "Hype Williams"
+  },
+  {
+    "id": "NKMtZm2YnCU",
+    "artist": "Puff Daddy ft. Faith Evans",
+    "title": "I'll Be Missing You",
+    "year": 1997,
+    "duration": 290,
+    "director": "Hype Williams"
+  },
+  {
+    "id": "kemDfQxvv1g",
+    "artist": "Weezer",
+    "title": "Buddy Holly",
+    "year": 1994,
+    "duration": 172,
+    "director": "Spike Jonze"
+  },
+  {
+    "id": "r8OipmKFDeM",
+    "artist": "Oasis",
+    "title": "Don't Look Back in Anger",
+    "year": 1996,
+    "duration": 258,
+    "director": "Dom & Nic"
+  },
+  {
+    "id": "ANE3M7xePEw",
+    "artist": "Björk",
+    "title": "Human Behaviour",
+    "year": 1993,
+    "duration": 238,
+    "director": "Michel Gondry"
+  },
+  {
+    "id": "NPcyTyilmYY",
+    "artist": "Alanis Morissette",
+    "title": "You Oughta Know",
+    "year": 1995,
+    "duration": 250,
+    "director": "Doug Freel"
+  },
+  {
+    "id": "gMhqzSAn2bU",
+    "artist": "Snoop Dogg",
+    "title": "What's My Name?",
+    "year": 1993,
+    "duration": 257,
+    "director": "Dr. Dre & Fab Five Freddy"
+  },
+  {
+    "id": "d_HlPboLRL8",
+    "artist": "The Cranberries",
+    "title": "Zombie",
+    "year": 1994,
+    "duration": 312,
+    "director": "Samuel Bayer"
+  },
+  {
+    "id": "A_MjCqQoLLA",
+    "artist": "Hanson",
+    "title": "MMMBop",
+    "year": 1997,
+    "duration": 240,
+    "director": "Tamra Davis"
+  },
+  {
+    "id": "LfRMnMoMDB0",
+    "artist": "Mariah Carey",
+    "title": "Always Be My Baby",
+    "year": 1995,
+    "duration": 260,
+    "director": "Daniel Pearl"
+  },
+  {
+    "id": "ftjEcrrf7r0",
+    "artist": "U2",
+    "title": "One",
+    "year": 1992,
+    "duration": 276,
+    "director": "Anton Corbijn"
+  },
+  {
+    "id": "tAGnKpE4NCI",
+    "artist": "Metallica",
+    "title": "Enter Sandman",
+    "year": 1991,
+    "duration": 330,
+    "director": "Wayne Isham"
+  },
+  {
+    "id": "qBZcEMVPlKA",
+    "artist": "Pearl Jam",
+    "title": "Black",
+    "year": 1992,
+    "duration": 342,
+    "director": "Kevin Kerslake"
+  },
+  {
+    "id": "DQmjBzEyQiQ",
+    "artist": "Boyz II Men",
+    "title": "I'll Make Love to You",
+    "year": 1994,
+    "duration": 260,
+    "director": "Daniel Pearl"
+  },
+  {
+    "id": "eXZkyem9qCk",
+    "artist": "2Pac",
+    "title": "Changes",
+    "year": 1998,
+    "duration": 289,
+    "director": "Diane Martel"
+  },
+  {
+    "id": "XFkzRNyygfk",
+    "artist": "Radiohead",
+    "title": "Creep",
+    "year": 1992,
+    "duration": 238,
+    "director": "Brett Turnbull"
+  },
+  {
+    "id": "JqPBb3BNWFE",
+    "artist": "Youssou N'Dour ft. Neneh Cherry",
+    "title": "7 Seconds",
+    "year": 1994,
+    "duration": 275,
+    "director": "Stéphane Sednaoui"
+  },
+  {
+    "id": "wy20L-5LkfQ",
+    "artist": "Cypress Hill",
+    "title": "Insane in the Brain",
+    "year": 1993,
+    "duration": 213,
+    "director": "Dr. Dre"
+  },
+  {
+    "id": "gVFeVdtaXUw",
+    "artist": "The Notorious B.I.G.",
+    "title": "Big Poppa",
+    "year": 1994,
+    "duration": 256,
+    "director": "Hype Williams"
+  },
+  {
+    "id": "LGZBDzh6rKg",
+    "artist": "Garbage",
+    "title": "Stupid Girl",
+    "year": 1996,
+    "duration": 234,
+    "director": "Sophie Muller"
+  },
+  {
+    "id": "fXRQjKE-2aA",
+    "artist": "Bush",
+    "title": "Glycerine",
+    "year": 1994,
+    "duration": 228,
+    "director": "Meiert Avis"
   }
 ]

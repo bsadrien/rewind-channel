@@ -238,5 +238,253 @@
     "year": 2002,
     "duration": 286,
     "director": "Hype Williams"
+  },
+  {
+    "id": "uelHwf8o7_U",
+    "artist": "Eminem",
+    "title": "Lose Yourself",
+    "year": 2002,
+    "duration": 326,
+    "director": "Phil Joanou"
+  },
+  {
+    "id": "g89fbMO2Y8k",
+    "artist": "Justin Timberlake",
+    "title": "SexyBack",
+    "year": 2006,
+    "duration": 214,
+    "director": "Michael Haussman"
+  },
+  {
+    "id": "CvBfHwUxHIk",
+    "artist": "Rihanna ft. Jay-Z",
+    "title": "Umbrella",
+    "year": 2007,
+    "duration": 276,
+    "director": "Anthony Mandler"
+  },
+  {
+    "id": "DUT5rEU6pqM",
+    "artist": "Shakira ft. Wyclef Jean",
+    "title": "Hips Don't Lie",
+    "year": 2006,
+    "duration": 242,
+    "director": "Diane Martel"
+  },
+  {
+    "id": "bd2B6SjMh_w",
+    "artist": "Gnarls Barkley",
+    "title": "Crazy",
+    "year": 2006,
+    "duration": 170,
+    "director": "Robert Hales"
+  },
+  {
+    "id": "KUmZp8pR1uc",
+    "artist": "Amy Winehouse",
+    "title": "Rehab",
+    "year": 2006,
+    "duration": 215,
+    "director": "Phil Griffin"
+  },
+  {
+    "id": "kIHlyMa-vmg",
+    "artist": "Kanye West ft. Jamie Foxx",
+    "title": "Gold Digger",
+    "year": 2005,
+    "duration": 209,
+    "director": "Hype Williams"
+  },
+  {
+    "id": "PsO6ZnUZI0g",
+    "artist": "Kanye West ft. Daft Punk",
+    "title": "Stronger",
+    "year": 2007,
+    "duration": 316,
+    "director": "Hype Williams"
+  },
+  {
+    "id": "2EwViQxSe24",
+    "artist": "Beyoncé",
+    "title": "Irreplaceable",
+    "year": 2006,
+    "duration": 230,
+    "director": "Anthony Mandler"
+  },
+  {
+    "id": "4m1EFMoRFvY",
+    "artist": "Beyoncé",
+    "title": "Single Ladies (Put a Ring on It)",
+    "year": 2008,
+    "duration": 237,
+    "director": "Jake Nava"
+  },
+  {
+    "id": "bESGLojNYSo",
+    "artist": "Lady Gaga",
+    "title": "Poker Face",
+    "year": 2008,
+    "duration": 241,
+    "director": "Ray Kay"
+  },
+  {
+    "id": "2Abk1ziSToo",
+    "artist": "Lady Gaga",
+    "title": "Just Dance",
+    "year": 2008,
+    "duration": 239,
+    "director": "Melanie Masson"
+  },
+  {
+    "id": "uSD4vsh1zDA",
+    "artist": "Black Eyed Peas",
+    "title": "I Gotta Feeling",
+    "year": 2009,
+    "duration": 285,
+    "director": "Diane Martel"
+  },
+  {
+    "id": "GemKqzILV4w",
+    "artist": "Snow Patrol",
+    "title": "Chasing Cars",
+    "year": 2006,
+    "duration": 272,
+    "director": "Alex Hemming"
+  },
+  {
+    "id": "RRKJiM9Njwk",
+    "artist": "My Chemical Romance",
+    "title": "Welcome to the Black Parade",
+    "year": 2006,
+    "duration": 310,
+    "director": "Samuel Bayer"
+  },
+  {
+    "id": "h4s0llOpKrU",
+    "artist": "Fall Out Boy",
+    "title": "Sugar, We're Goin Down",
+    "year": 2005,
+    "duration": 238,
+    "director": "Matt Lenski"
+  },
+  {
+    "id": "vN-Kj-w0kGg",
+    "artist": "Panic! at the Disco",
+    "title": "I Write Sins Not Tragedies",
+    "year": 2006,
+    "duration": 222,
+    "director": "Shane Drake"
+  },
+  {
+    "id": "g8HeKsOQRco",
+    "artist": "Franz Ferdinand",
+    "title": "Take Me Out",
+    "year": 2004,
+    "duration": 214,
+    "director": "Grant Marshall"
+  },
+  {
+    "id": "o4uhx-cdKhk",
+    "artist": "Yeah Yeah Yeahs",
+    "title": "Maps",
+    "year": 2003,
+    "duration": 215,
+    "director": "Patrick Daughters"
+  },
+  {
+    "id": "VPRjCeoBqrI",
+    "artist": "Usher",
+    "title": "Burn",
+    "year": 2004,
+    "duration": 237,
+    "director": "Little X"
+  },
+  {
+    "id": "BB9rOCsHFnU",
+    "artist": "Nickelback",
+    "title": "Photograph",
+    "year": 2005,
+    "duration": 254,
+    "director": "Nigel Dick"
+  },
+  {
+    "id": "J8QHskpDPGM",
+    "artist": "3 Doors Down",
+    "title": "Here Without You",
+    "year": 2003,
+    "duration": 231,
+    "director": "Meiert Avis"
+  },
+  {
+    "id": "mJSBbXY7jow",
+    "artist": "Lil Wayne",
+    "title": "Lollipop",
+    "year": 2008,
+    "duration": 272,
+    "director": "Gil Green"
+  },
+  {
+    "id": "hCuMWrfXG4E",
+    "artist": "Flo Rida ft. T-Pain",
+    "title": "Low",
+    "year": 2007,
+    "duration": 241,
+    "director": "Syndrome"
+  },
+  {
+    "id": "gNRKYG7j7kI",
+    "artist": "Ne-Yo",
+    "title": "So Sick",
+    "year": 2006,
+    "duration": 228,
+    "director": "Benny Boom"
+  },
+  {
+    "id": "oBIxScGzpCQ",
+    "artist": "John Mayer",
+    "title": "Waiting on the World to Change",
+    "year": 2006,
+    "duration": 219,
+    "director": "Hype Williams"
+  },
+  {
+    "id": "EkHTsc9KsDI",
+    "artist": "Jason Mraz",
+    "title": "I'm Yours",
+    "year": 2008,
+    "duration": 243,
+    "director": "Andrew Link"
+  },
+  {
+    "id": "u57d2aYCaL0",
+    "artist": "Jack Johnson",
+    "title": "Better Together",
+    "year": 2005,
+    "duration": 213,
+    "director": "Jack Johnson"
+  },
+  {
+    "id": "w7g1HWSMG_k",
+    "artist": "Ciara ft. Missy Elliott",
+    "title": "1, 2 Step",
+    "year": 2004,
+    "duration": 245,
+    "director": "Bryan Barber"
+  },
+  {
+    "id": "tAp9BKosV7g",
+    "artist": "Katy Perry",
+    "title": "I Kissed a Girl",
+    "year": 2008,
+    "duration": 179,
+    "director": "Adria Petty"
+  },
+  {
+    "id": "8xg3vE8Ie_E",
+    "artist": "Taylor Swift",
+    "title": "Love Story",
+    "year": 2008,
+    "duration": 233,
+    "director": "Trey Fanjoy"
   }
 ]
